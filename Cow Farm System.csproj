@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MilkProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilkProduction.Designer.cs">
+      <DependentUpon>MilkProduction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cows.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MilkProduction.resx">
+      <DependentUpon>MilkProduction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cows.resx">
       <DependentUpon>Cows.cs</DependentUpon>
     </EmbeddedResource>
