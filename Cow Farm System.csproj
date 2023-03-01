@@ -52,6 +52,12 @@
     <Compile Include="CowHealth.Designer.cs">
       <DependentUpon>CowHealth.cs</DependentUpon>
     </Compile>
+    <Compile Include="CowBreeding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CowBreeding.Designer.cs">
+      <DependentUpon>CowBreeding.cs</DependentUpon>
+    </Compile>
     <Compile Include="MilkSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CowHealth.resx">
       <DependentUpon>CowHealth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CowBreeding.resx">
+      <DependentUpon>CowBreeding.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MilkSales.resx">
       <DependentUpon>MilkSales.cs</DependentUpon>
