@@ -75,5 +75,17 @@ namespace Cow_Farm_System
             page.Show();
             this.Hide();
         }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+            if (CName.Text == "" || CTag.Text == "" || CColor.Text == "" || CBread.Text == "" || CAge.Text == "" || CWAB.Text == "" || CPasture.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+
+            }
+        }
     }
 }

@@ -70,6 +70,7 @@
     <Compile Include="CowBreeding.Designer.cs">
       <DependentUpon>CowBreeding.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="MilkSales.cs">
       <SubType>Form</SubType>
     </Compile>
