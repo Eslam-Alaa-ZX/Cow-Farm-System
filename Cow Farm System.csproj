@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CowHealth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CowHealth.Designer.cs">
+      <DependentUpon>CowHealth.cs</DependentUpon>
+    </Compile>
     <Compile Include="MilkProduction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CowHealth.resx">
+      <DependentUpon>CowHealth.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MilkProduction.resx">
       <DependentUpon>MilkProduction.cs</DependentUpon>
     </EmbeddedResource>
