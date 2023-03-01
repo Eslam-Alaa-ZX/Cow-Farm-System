@@ -544,6 +544,7 @@ namespace Cow_Farm_System
             this.CDOB.Size = new System.Drawing.Size(200, 33);
             this.CDOB.TabIndex = 22;
             this.CDOB.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            this.CDOB.ValueChanged += new System.EventHandler(this.CDOB_ValueChanged);
             // 
             // SaveBtn
             // 
@@ -573,6 +574,7 @@ namespace Cow_Farm_System
             this.EditBtn.TabIndex = 24;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -587,6 +589,7 @@ namespace Cow_Farm_System
             this.DeleteBtn.TabIndex = 25;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // ClearBtn
             // 
@@ -601,6 +604,7 @@ namespace Cow_Farm_System
             this.ClearBtn.TabIndex = 26;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // label19
             // 
@@ -617,14 +621,16 @@ namespace Cow_Farm_System
             // 
             this.CowGV.AllowUserToAddRows = false;
             this.CowGV.AllowUserToDeleteRows = false;
-            this.CowGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.CowGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CowGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.CowGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CowGV.Location = new System.Drawing.Point(298, 440);
             this.CowGV.Name = "CowGV";
+            this.CowGV.ReadOnly = true;
             this.CowGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.CowGV.Size = new System.Drawing.Size(887, 326);
             this.CowGV.TabIndex = 28;
+            this.CowGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CowGV_CellMouseClick);
             // 
             // Cows
             // 
