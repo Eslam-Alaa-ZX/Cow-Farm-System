@@ -79,6 +79,8 @@ namespace Cow_Farm_System
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.CowGV = new System.Windows.Forms.DataGridView();
+            this.CFilter = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -632,12 +634,33 @@ namespace Cow_Farm_System
             this.CowGV.TabIndex = 28;
             this.CowGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CowGV_CellMouseClick);
             // 
+            // CFilter
+            // 
+            this.CFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.CFilter.Location = new System.Drawing.Point(481, 394);
+            this.CFilter.Name = "CFilter";
+            this.CFilter.Size = new System.Drawing.Size(187, 33);
+            this.CFilter.TabIndex = 30;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(422, 400);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 23);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Filter";
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.CFilter);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.CowGV);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ClearBtn);
@@ -750,5 +773,7 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView CowGV;
+        private System.Windows.Forms.TextBox CFilter;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -143,7 +143,7 @@ namespace Cow_Farm_System
             CAge.Text = CowGV.SelectedRows[0].Cells[5].Value.ToString();
             CWAB.Text = CowGV.SelectedRows[0].Cells[6].Value.ToString();
             CPasture.Text = CowGV.SelectedRows[0].Cells[7].Value.ToString();
-            age = Convert.ToInt32(CAge.Text);
+            //age = Convert.ToInt32(CAge.Text);
             if (CName.Text == "")
             {
                 key = 0;
@@ -151,6 +151,7 @@ namespace Cow_Farm_System
             else
             {
                 key = Convert.ToInt32(CowGV.SelectedRows[0].Cells[0].Value.ToString());
+                age = Convert.ToInt32(CowGV.SelectedRows[0].Cells[5].Value.ToString());
             }
         }
 
