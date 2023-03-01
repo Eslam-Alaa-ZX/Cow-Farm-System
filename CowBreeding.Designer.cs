@@ -148,6 +148,7 @@ namespace Cow_Farm_System
             this.DashboardPg.Size = new System.Drawing.Size(123, 24);
             this.DashboardPg.TabIndex = 4;
             this.DashboardPg.Text = "Dashboard";
+            this.DashboardPg.Click += new System.EventHandler(this.DashboardPg_Click);
             // 
             // panel8
             // 
@@ -178,6 +179,7 @@ namespace Cow_Farm_System
             this.FinancePg.Size = new System.Drawing.Size(91, 24);
             this.FinancePg.TabIndex = 4;
             this.FinancePg.Text = "Finance";
+            this.FinancePg.Click += new System.EventHandler(this.FinancePg_Click);
             // 
             // panel9
             // 
@@ -208,6 +210,7 @@ namespace Cow_Farm_System
             this.SalesPg.Size = new System.Drawing.Size(105, 24);
             this.SalesPg.TabIndex = 4;
             this.SalesPg.Text = "Milk Sales";
+            this.SalesPg.Click += new System.EventHandler(this.SalesPg_Click);
             // 
             // panel5
             // 
@@ -239,6 +242,7 @@ namespace Cow_Farm_System
             this.BreadingPg.Size = new System.Drawing.Size(100, 24);
             this.BreadingPg.TabIndex = 4;
             this.BreadingPg.Text = "Breading";
+            this.BreadingPg.Click += new System.EventHandler(this.BreadingPg_Click);
             // 
             // panel6
             // 
@@ -269,6 +273,7 @@ namespace Cow_Farm_System
             this.HealthPg.Size = new System.Drawing.Size(77, 24);
             this.HealthPg.TabIndex = 4;
             this.HealthPg.Text = "Health";
+            this.HealthPg.Click += new System.EventHandler(this.HealthPg_Click);
             // 
             // panel4
             // 
@@ -299,6 +304,7 @@ namespace Cow_Farm_System
             this.MilkPg.Size = new System.Drawing.Size(164, 24);
             this.MilkPg.TabIndex = 4;
             this.MilkPg.Text = "Milk Production";
+            this.MilkPg.Click += new System.EventHandler(this.MilkPg_Click);
             // 
             // panel3
             // 
@@ -330,6 +336,7 @@ namespace Cow_Farm_System
             this.CowsPg.Size = new System.Drawing.Size(67, 24);
             this.CowsPg.TabIndex = 4;
             this.CowsPg.Text = "Cows";
+            this.CowsPg.Click += new System.EventHandler(this.CowsPg_Click);
             // 
             // pictureBox1
             // 
@@ -383,6 +390,7 @@ namespace Cow_Farm_System
             this.label3.Size = new System.Drawing.Size(176, 28);
             this.label3.TabIndex = 3;
             this.label3.Text = "Cow Breeding";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label11
             // 

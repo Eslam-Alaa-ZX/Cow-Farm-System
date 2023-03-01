@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Cow_Farm_System
 {
-    public partial class Finance : Form
+    public partial class DashBoard : Form
     {
-        public Finance()
+        public DashBoard()
         {
             InitializeComponent();
         }
 
         private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

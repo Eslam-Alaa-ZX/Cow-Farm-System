@@ -1,7 +1,7 @@
 ﻿
 namespace Cow_Farm_System
 {
-    partial class CowHealth
+    partial class DashBoard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Cow_Farm_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CowHealth));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -57,26 +57,30 @@ namespace Cow_Farm_System
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.HVName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.CName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.HDiag = new System.Windows.Forms.TextBox();
+            this.BCName = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.HEvent = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.HCOT = new System.Windows.Forms.TextBox();
+            this.BCAge = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.HTreat = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.BPregDate = new System.Windows.Forms.DateTimePicker();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.EditBtn = new System.Windows.Forms.Button();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.HList = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.BList = new System.Windows.Forms.DataGridView();
+            this.BHDate = new System.Windows.Forms.DateTimePicker();
+            this.BBDate = new System.Windows.Forms.DateTimePicker();
+            this.BExCalve = new System.Windows.Forms.DateTimePicker();
+            this.BDCalved = new System.Windows.Forms.DateTimePicker();
+            this.BCowID = new System.Windows.Forms.ComboBox();
+            this.BRemark = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -94,7 +98,7 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,6 +121,7 @@ namespace Cow_Farm_System
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel7.Controls.Add(this.pictureBox6);
             this.panel7.Controls.Add(this.DashboardPg);
             this.panel7.Location = new System.Drawing.Point(0, 570);
@@ -210,6 +215,7 @@ namespace Cow_Farm_System
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.BreadingPg);
             this.panel5.Location = new System.Drawing.Point(0, 377);
@@ -241,7 +247,6 @@ namespace Cow_Farm_System
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.panel6.Controls.Add(this.pictureBox5);
             this.panel6.Controls.Add(this.HealthPg);
             this.panel6.Location = new System.Drawing.Point(0, 312);
@@ -273,7 +278,6 @@ namespace Cow_Farm_System
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Controls.Add(this.MilkPg);
             this.panel4.Location = new System.Drawing.Point(0, 247);
@@ -384,18 +388,9 @@ namespace Cow_Farm_System
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(665, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 28);
+            this.label3.Size = new System.Drawing.Size(176, 28);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Health Report";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // HVName
-            // 
-            this.HVName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HVName.Location = new System.Drawing.Point(908, 239);
-            this.HVName.Name = "HVName";
-            this.HVName.Size = new System.Drawing.Size(187, 33);
-            this.HVName.TabIndex = 7;
+            this.label3.Text = "Cow Breeding";
             // 
             // label11
             // 
@@ -404,17 +399,9 @@ namespace Cow_Farm_System
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Location = new System.Drawing.Point(293, 114);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 23);
+            this.label11.Size = new System.Drawing.Size(103, 23);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Cow ID";
-            // 
-            // CName
-            // 
-            this.CName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.CName.Location = new System.Drawing.Point(536, 144);
-            this.CName.Name = "CName";
-            this.CName.Size = new System.Drawing.Size(187, 33);
-            this.CName.TabIndex = 9;
+            this.label11.Text = "Heat Date";
             // 
             // label12
             // 
@@ -425,95 +412,101 @@ namespace Cow_Farm_System
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 23);
             this.label12.TabIndex = 8;
-            this.label12.Text = "Cow Name";
+            this.label12.Text = "Bread Date";
             // 
-            // HDiag
+            // BCName
             // 
-            this.HDiag.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HDiag.Location = new System.Drawing.Point(997, 144);
-            this.HDiag.Name = "HDiag";
-            this.HDiag.Size = new System.Drawing.Size(187, 33);
-            this.HDiag.TabIndex = 13;
+            this.BCName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BCName.Location = new System.Drawing.Point(1034, 143);
+            this.BCName.Name = "BCName";
+            this.BCName.Size = new System.Drawing.Size(187, 33);
+            this.BCName.TabIndex = 13;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(992, 114);
+            this.label13.Location = new System.Drawing.Point(1029, 113);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(98, 23);
+            this.label13.Size = new System.Drawing.Size(114, 23);
             this.label13.TabIndex = 12;
-            this.label13.Text = "Diagnosis";
-            // 
-            // HEvent
-            // 
-            this.HEvent.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HEvent.Location = new System.Drawing.Point(759, 144);
-            this.HEvent.Name = "HEvent";
-            this.HEvent.Size = new System.Drawing.Size(187, 33);
-            this.HEvent.TabIndex = 11;
+            this.label13.Text = "Cow Name";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(754, 114);
+            this.label14.Location = new System.Drawing.Point(788, 113);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 23);
+            this.label14.Size = new System.Drawing.Size(75, 23);
             this.label14.TabIndex = 10;
-            this.label14.Text = "Event";
+            this.label14.Text = "Cow ID";
             // 
-            // HCOT
+            // BCAge
             // 
-            this.HCOT.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HCOT.Location = new System.Drawing.Point(661, 239);
-            this.HCOT.Name = "HCOT";
-            this.HCOT.Size = new System.Drawing.Size(187, 33);
-            this.HCOT.TabIndex = 19;
+            this.BCAge.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BCAge.Location = new System.Drawing.Point(1031, 239);
+            this.BCAge.Name = "BCAge";
+            this.BCAge.Size = new System.Drawing.Size(187, 33);
+            this.BCAge.TabIndex = 21;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(1026, 209);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(96, 23);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Cow Age";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(656, 209);
+            this.label16.Location = new System.Drawing.Point(788, 209);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(170, 23);
+            this.label16.Size = new System.Drawing.Size(128, 23);
             this.label16.TabIndex = 18;
-            this.label16.Text = "Cost of Treatment";
-            // 
-            // HTreat
-            // 
-            this.HTreat.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HTreat.Location = new System.Drawing.Point(408, 239);
-            this.HTreat.Name = "HTreat";
-            this.HTreat.Size = new System.Drawing.Size(187, 33);
-            this.HTreat.TabIndex = 17;
+            this.label16.Text = "Date Calved";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(403, 209);
+            this.label17.Location = new System.Drawing.Point(532, 209);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(102, 23);
+            this.label17.Size = new System.Drawing.Size(232, 23);
             this.label17.TabIndex = 16;
-            this.label17.Text = "Treatment";
+            this.label17.Text = "Expected Date to Calve";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(904, 209);
+            this.label18.Location = new System.Drawing.Point(294, 209);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(103, 23);
+            this.label18.Size = new System.Drawing.Size(159, 23);
             this.label18.TabIndex = 14;
-            this.label18.Text = "Vet Name";
+            this.label18.Text = "Pregnancy Date";
             this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // BPregDate
+            // 
+            this.BPregDate.CustomFormat = "yyyy-MM-dd";
+            this.BPregDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BPregDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BPregDate.Location = new System.Drawing.Point(297, 239);
+            this.BPregDate.Name = "BPregDate";
+            this.BPregDate.Size = new System.Drawing.Size(200, 33);
+            this.BPregDate.TabIndex = 22;
+            this.BPregDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             // 
             // SaveBtn
             // 
@@ -522,7 +515,7 @@ namespace Cow_Farm_System
             this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBtn.Location = new System.Drawing.Point(379, 307);
+            this.SaveBtn.Location = new System.Drawing.Point(379, 341);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(139, 44);
             this.SaveBtn.TabIndex = 23;
@@ -536,7 +529,7 @@ namespace Cow_Farm_System
             this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.EditBtn.ForeColor = System.Drawing.Color.White;
-            this.EditBtn.Location = new System.Drawing.Point(574, 307);
+            this.EditBtn.Location = new System.Drawing.Point(574, 341);
             this.EditBtn.Name = "EditBtn";
             this.EditBtn.Size = new System.Drawing.Size(139, 44);
             this.EditBtn.TabIndex = 24;
@@ -550,7 +543,7 @@ namespace Cow_Farm_System
             this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(758, 307);
+            this.DeleteBtn.Location = new System.Drawing.Point(758, 341);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(139, 44);
             this.DeleteBtn.TabIndex = 25;
@@ -564,7 +557,7 @@ namespace Cow_Farm_System
             this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.ClearBtn.ForeColor = System.Drawing.Color.White;
-            this.ClearBtn.Location = new System.Drawing.Point(952, 307);
+            this.ClearBtn.Location = new System.Drawing.Point(952, 341);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(139, 44);
             this.ClearBtn.TabIndex = 26;
@@ -576,67 +569,134 @@ namespace Cow_Farm_System
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label19.Location = new System.Drawing.Point(707, 399);
+            this.label19.Location = new System.Drawing.Point(707, 402);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(148, 25);
+            this.label19.Size = new System.Drawing.Size(102, 25);
             this.label19.TabIndex = 27;
-            this.label19.Text = "Health Report";
+            this.label19.Text = "Cows List";
             // 
-            // HList
+            // BList
             // 
-            this.HList.AllowUserToAddRows = false;
-            this.HList.AllowUserToDeleteRows = false;
-            this.HList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.HList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.HList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.HList.Location = new System.Drawing.Point(298, 440);
-            this.HList.Name = "HList";
-            this.HList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.HList.Size = new System.Drawing.Size(887, 326);
-            this.HList.TabIndex = 28;
+            this.BList.AllowUserToAddRows = false;
+            this.BList.AllowUserToDeleteRows = false;
+            this.BList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.BList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.BList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BList.Location = new System.Drawing.Point(298, 443);
+            this.BList.Name = "BList";
+            this.BList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.BList.Size = new System.Drawing.Size(887, 326);
+            this.BList.TabIndex = 28;
             // 
-            // comboBox1
+            // BHDate
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(297, 145);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 32);
-            this.comboBox1.TabIndex = 30;
+            this.BHDate.CustomFormat = "yyyy-MM-dd";
+            this.BHDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BHDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BHDate.Location = new System.Drawing.Point(297, 144);
+            this.BHDate.Name = "BHDate";
+            this.BHDate.Size = new System.Drawing.Size(200, 33);
+            this.BHDate.TabIndex = 29;
+            this.BHDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             // 
-            // CowHealth
+            // BBDate
+            // 
+            this.BBDate.CustomFormat = "yyyy-MM-dd";
+            this.BBDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BBDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BBDate.Location = new System.Drawing.Point(535, 144);
+            this.BBDate.Name = "BBDate";
+            this.BBDate.Size = new System.Drawing.Size(200, 33);
+            this.BBDate.TabIndex = 30;
+            this.BBDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // BExCalve
+            // 
+            this.BExCalve.CustomFormat = "yyyy-MM-dd";
+            this.BExCalve.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BExCalve.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BExCalve.Location = new System.Drawing.Point(535, 239);
+            this.BExCalve.Name = "BExCalve";
+            this.BExCalve.Size = new System.Drawing.Size(200, 33);
+            this.BExCalve.TabIndex = 31;
+            this.BExCalve.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // BDCalved
+            // 
+            this.BDCalved.CustomFormat = "yyyy-MM-dd";
+            this.BDCalved.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BDCalved.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BDCalved.Location = new System.Drawing.Point(792, 239);
+            this.BDCalved.Name = "BDCalved";
+            this.BDCalved.Size = new System.Drawing.Size(200, 33);
+            this.BDCalved.TabIndex = 32;
+            this.BDCalved.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // BCowID
+            // 
+            this.BCowID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BCowID.FormattingEnabled = true;
+            this.BCowID.Location = new System.Drawing.Point(792, 144);
+            this.BCowID.Name = "BCowID";
+            this.BCowID.Size = new System.Drawing.Size(196, 32);
+            this.BCowID.TabIndex = 33;
+            // 
+            // BRemark
+            // 
+            this.BRemark.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BRemark.Location = new System.Drawing.Point(720, 290);
+            this.BRemark.Name = "BRemark";
+            this.BRemark.Size = new System.Drawing.Size(215, 33);
+            this.BRemark.TabIndex = 35;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(626, 294);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 23);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Remarks";
+            // 
+            // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.HList);
+            this.Controls.Add(this.BRemark);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.BCowID);
+            this.Controls.Add(this.BDCalved);
+            this.Controls.Add(this.BExCalve);
+            this.Controls.Add(this.BBDate);
+            this.Controls.Add(this.BHDate);
+            this.Controls.Add(this.BList);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
-            this.Controls.Add(this.HCOT);
+            this.Controls.Add(this.BPregDate);
+            this.Controls.Add(this.BCAge);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.HTreat);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.HDiag);
+            this.Controls.Add(this.BCName);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.HEvent);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.CName);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.HVName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CowHealth";
+            this.Name = "DashBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MilkProduction";
+            this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -663,7 +723,7 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.HList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -698,25 +758,29 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox HVName;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox CName;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox HDiag;
+        private System.Windows.Forms.TextBox BCName;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox HEvent;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox HCOT;
+        private System.Windows.Forms.TextBox BCAge;
+        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox HTreat;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.DateTimePicker BPregDate;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Button EditBtn;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView HList;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView BList;
+        private System.Windows.Forms.DateTimePicker BHDate;
+        private System.Windows.Forms.DateTimePicker BBDate;
+        private System.Windows.Forms.DateTimePicker BExCalve;
+        private System.Windows.Forms.DateTimePicker BDCalved;
+        private System.Windows.Forms.ComboBox BCowID;
+        private System.Windows.Forms.TextBox BRemark;
+        private System.Windows.Forms.Label label4;
     }
 }
