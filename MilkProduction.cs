@@ -97,6 +97,16 @@ namespace Cow_Farm_System
             this.Hide();
         }
 
+        private void Clear()
+        {
+            MDate.Value = DateTime.Today.Date;
+            CName.Text = "";
+            MAm.Text = "";
+            MNoon.Text = "";
+            MPm.Text = "";
+            MTotal.Text = "";
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
@@ -111,6 +121,11 @@ namespace Cow_Farm_System
         {
             int total = Convert.ToInt32(MAm.Text) + Convert.ToInt32(MNoon.Text) + Convert.ToInt32(MPm.Text);
             MTotal.Text = total.ToString();
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
         }
     }
 }
