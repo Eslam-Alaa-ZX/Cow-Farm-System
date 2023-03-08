@@ -416,6 +416,7 @@ namespace Cow_Farm_System
             // 
             // BCName
             // 
+            this.BCName.Enabled = false;
             this.BCName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.BCName.Location = new System.Drawing.Point(1034, 143);
             this.BCName.Name = "BCName";
@@ -446,6 +447,7 @@ namespace Cow_Farm_System
             // 
             // BCAge
             // 
+            this.BCAge.Enabled = false;
             this.BCAge.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.BCAge.Location = new System.Drawing.Point(1031, 239);
             this.BCAge.Name = "BCAge";
