@@ -642,6 +642,7 @@ namespace Cow_Farm_System
             this.BCowID.Name = "BCowID";
             this.BCowID.Size = new System.Drawing.Size(196, 32);
             this.BCowID.TabIndex = 33;
+            this.BCowID.SelectionChangeCommitted += new System.EventHandler(this.BCowID_SelectionChangeCommitted);
             // 
             // BRemark
             // 
