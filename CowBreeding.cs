@@ -19,12 +19,20 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             showBreading();
+            getCowId();
         }
 
         private void showBreading()
         {
             String Query = "Select * from BreedTbl";
             BList.DataSource = Con.GetData(Query);
+        }
+
+        private void getCowId()
+        {
+            string Query = "Select CowId from CowTbl";
+            BCowID.ValueMember = "CowId";
+            BCowID.DataSource = Con.GetData(Query);
         }
 
         private void label18_Click(object sender, EventArgs e)
