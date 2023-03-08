@@ -164,7 +164,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "Update MilkTbl set CowName='" + CName.Text + "',AmMilk=" + Convert.ToInt32(MAm.Text) + ",NoonMilk=" + Convert.ToInt32(MNoon.Text) + ",PmMilk=" + Convert.ToInt32(MPm.Text) + ",TotalMilk=" + Convert.ToInt32(MTotal.Text) + ",DateProd= '" + MDate.Value.Date.ToShortDateString() + "' where MId=" + key + " ";
+                    String Query = "Update MilkTbl set CowId='" + CID.SelectedValue.ToString() + "',CowName='" + CName.Text + "',AmMilk=" + Convert.ToInt32(MAm.Text) + ",NoonMilk=" + Convert.ToInt32(MNoon.Text) + ",PmMilk=" + Convert.ToInt32(MPm.Text) + ",TotalMilk=" + Convert.ToInt32(MTotal.Text) + ",DateProd= '" + MDate.Value.Date.ToShortDateString() + "' where MId=" + key + " ";
                     Con.SetData(Query);
                     showMilk();
                     Clear();
