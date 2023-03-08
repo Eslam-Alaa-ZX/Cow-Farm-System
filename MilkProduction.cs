@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,20 @@ namespace Cow_Farm_System
 {
     public partial class MilkProduction : Form
     {
+        Functions Con;
+        int key = 0;
         public MilkProduction()
         {
             InitializeComponent();
+            Con = new Functions();
+            getCowId();
+        }
+
+        private void getCowId()
+        {
+            string Query = "Select CowId from CowTbl";
+            CID.ValueMember = "CowId";
+           CID.DataSource = Con.GetData(Query);
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -74,6 +86,11 @@ namespace Cow_Farm_System
             Cows page = new Cows();
             page.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
