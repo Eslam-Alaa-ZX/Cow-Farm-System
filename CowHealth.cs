@@ -143,5 +143,10 @@ namespace Cow_Farm_System
                 key = Convert.ToInt32(HList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }
