@@ -16,7 +16,7 @@ namespace Cow_Farm_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MilkProduction());
+            Application.Run(new CowHealth());
         }
     }
 }

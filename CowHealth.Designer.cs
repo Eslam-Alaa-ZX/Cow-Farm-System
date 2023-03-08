@@ -76,7 +76,7 @@ namespace Cow_Farm_System
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.HList = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CID = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -528,6 +528,7 @@ namespace Cow_Farm_System
             this.SaveBtn.TabIndex = 23;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // EditBtn
             // 
@@ -595,14 +596,14 @@ namespace Cow_Farm_System
             this.HList.Size = new System.Drawing.Size(887, 326);
             this.HList.TabIndex = 28;
             // 
-            // comboBox1
+            // CID
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(297, 145);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 32);
-            this.comboBox1.TabIndex = 30;
+            this.CID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.CID.FormattingEnabled = true;
+            this.CID.Location = new System.Drawing.Point(297, 145);
+            this.CID.Name = "CID";
+            this.CID.Size = new System.Drawing.Size(196, 32);
+            this.CID.TabIndex = 30;
             // 
             // CowHealth
             // 
@@ -610,7 +611,7 @@ namespace Cow_Farm_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CID);
             this.Controls.Add(this.HList);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ClearBtn);
@@ -717,6 +718,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView HList;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CID;
     }
 }
