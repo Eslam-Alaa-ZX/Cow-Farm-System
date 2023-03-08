@@ -126,5 +126,10 @@ namespace Cow_Farm_System
         {
             getCowName();
         }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
     }
 }

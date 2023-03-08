@@ -566,6 +566,7 @@ namespace Cow_Farm_System
             this.ClearBtn.TabIndex = 26;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
             // 
             // label19
             // 
