@@ -410,6 +410,7 @@ namespace Cow_Farm_System
             // 
             // CName
             // 
+            this.CName.Enabled = false;
             this.CName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.CName.Location = new System.Drawing.Point(536, 144);
             this.CName.Name = "CName";
