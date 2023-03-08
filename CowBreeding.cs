@@ -156,6 +156,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Data");
             }
+            else
+            {
+                try
+                {
+                    String Query = "update BreedTbl set HeatDate='" + BHDate.Value.Date.ToShortDateString() + "',BreedDate= '" + BBDate.Value.Date.ToShortDateString() + "',CowId=" + Convert.ToInt32(BCowID.SelectedValue.ToString()) + ",CowName='" + BCName.Text + "',PregDate='" + BPregDate.Value.Date.ToShortDateString() + "',ExpDateCalve='" + BExCalve.Value.Date.ToShortDateString() + "',DateCalved='" + BDCalved.Value.Date.ToShortDateString() + "',CowAge=" + Convert.ToInt32(BCAge.Text) + ",Remarks='" + BRemark.Text + "' where BrId=" + key + " ";
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
