@@ -632,9 +632,9 @@ namespace Cow_Farm_System
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(993, 211);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 23);
+            this.label4.Size = new System.Drawing.Size(54, 23);
             this.label4.TabIndex = 31;
-            this.label4.Text = "Diagnosis Date";
+            this.label4.Text = "Date";
             // 
             // CowHealth
             // 
