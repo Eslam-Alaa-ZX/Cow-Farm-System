@@ -18,6 +18,14 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
             Con = new Functions();
+            getCowId();
+        }
+
+        private void getCowId()
+        {
+            string Query = "Select CowId from CowTbl";
+            CID.ValueMember = "CowId";
+            CID.DataSource = Con.GetData(Query);
         }
 
         private void label18_Click(object sender, EventArgs e)
