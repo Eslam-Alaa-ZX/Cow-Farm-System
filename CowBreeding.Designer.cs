@@ -580,11 +580,12 @@ namespace Cow_Farm_System
             // 
             this.BList.AllowUserToAddRows = false;
             this.BList.AllowUserToDeleteRows = false;
-            this.BList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.BList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.BList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.BList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BList.Location = new System.Drawing.Point(298, 443);
             this.BList.Name = "BList";
+            this.BList.ReadOnly = true;
             this.BList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BList.Size = new System.Drawing.Size(887, 326);
             this.BList.TabIndex = 28;
