@@ -28,6 +28,15 @@ namespace Cow_Farm_System
             CID.DataSource = Con.GetData(Query);
         }
 
+        private void getCowName()
+        {
+            string Query = "Select * from CowTbl where CowId=" + CID.SelectedValue + "";
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                CName.Text = dr["CowName"].ToString();
+            }
+        }
+
         private void label18_Click(object sender, EventArgs e)
         {
 
