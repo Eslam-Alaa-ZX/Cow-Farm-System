@@ -547,6 +547,7 @@ namespace Cow_Farm_System
             this.EditBtn.TabIndex = 24;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -601,6 +602,7 @@ namespace Cow_Farm_System
             this.MList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MList.Size = new System.Drawing.Size(887, 326);
             this.MList.TabIndex = 28;
+            this.MList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.MList_CellMouseClick);
             // 
             // CID
             // 

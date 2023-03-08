@@ -152,5 +152,29 @@ namespace Cow_Farm_System
         {
             Clear();
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            CID.SelectedValue = MList.SelectedRows[0].Cells[1].Value.ToString();
+            CName.Text = MList.SelectedRows[0].Cells[2].Value.ToString();
+            MAm.Text = MList.SelectedRows[0].Cells[3].Value.ToString();
+            MNoon.Text = MList.SelectedRows[0].Cells[4].Value.ToString();
+            MPm.Text = MList.SelectedRows[0].Cells[5].Value.ToString();
+            MTotal.Text = MList.SelectedRows[0].Cells[6].Value.ToString();
+            MDate.Text = MList.SelectedRows[0].Cells[7].Value.ToString();
+            if (CName.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(MList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
