@@ -604,6 +604,7 @@ namespace Cow_Farm_System
             this.CID.Name = "CID";
             this.CID.Size = new System.Drawing.Size(196, 32);
             this.CID.TabIndex = 30;
+            this.CID.SelectionChangeCommitted += new System.EventHandler(this.CID_SelectionChangeCommitted);
             // 
             // CowHealth
             // 

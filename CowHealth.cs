@@ -100,5 +100,10 @@ namespace Cow_Farm_System
         {
 
         }
+
+        private void CID_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            getCowName();
+        }
     }
 }
