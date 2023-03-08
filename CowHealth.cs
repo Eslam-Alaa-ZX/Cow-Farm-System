@@ -148,6 +148,7 @@ namespace Cow_Farm_System
         {
             CID.SelectedValue = HList.SelectedRows[0].Cells[1].Value.ToString();
             CName.Text = HList.SelectedRows[0].Cells[2].Value.ToString();
+            HDDate.Text = HList.SelectedRows[0].Cells[3].Value.ToString();
             HEvent.Text = HList.SelectedRows[0].Cells[4].Value.ToString();
             HDiag.Text = HList.SelectedRows[0].Cells[5].Value.ToString();
             HTreat.Text = HList.SelectedRows[0].Cells[6].Value.ToString();
