@@ -179,7 +179,22 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Please Sellect a Breading!!!");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "Delete from BreedTbl where BrId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
