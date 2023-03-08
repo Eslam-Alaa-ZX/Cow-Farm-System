@@ -103,6 +103,18 @@ namespace Cow_Farm_System
             this.Hide();
         }
 
+        private void Clear()
+        {
+            HDDate.Value = DateTime.Today.Date;
+            CName.Text = "";
+            HVName.Text = "";
+            HEvent.Text = "";
+            HTreat.Text = "";
+            HDiag.Text = "";
+            HCOT.Text = "";
+            key = 0;
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
