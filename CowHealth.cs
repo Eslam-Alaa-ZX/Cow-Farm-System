@@ -175,7 +175,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Information");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "update HealthTbl set CowId='" + CID.SelectedValue.ToString() + "',CowName= '" + CName.Text + "',RepDate='" + HDDate.Value.Date.ToShortDateString() + "',Event='" + HEvent.Text + "',Diagnosis='" + HDiag.Text + "',Treatment='" + HTreat.Text + "',Cost=" + HCOT.Text + ",VetName='" + HVName.Text + "' where RepId=" + key + " ";
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
