@@ -172,5 +172,14 @@ namespace Cow_Farm_System
                 }
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            if (key == 0)
+            {
+                MessageBox.Show("Please Sellect a Breading!!!");
+            }
+            
+        }
     }
 }
