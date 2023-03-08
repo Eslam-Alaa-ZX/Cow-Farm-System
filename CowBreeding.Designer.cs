@@ -521,6 +521,7 @@ namespace Cow_Farm_System
             this.SaveBtn.TabIndex = 23;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // EditBtn
             // 
