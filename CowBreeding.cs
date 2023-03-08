@@ -104,6 +104,19 @@ namespace Cow_Farm_System
             this.Hide();
         }
 
+        private void Clear()
+        {
+            BHDate.Value = DateTime.Today.Date;
+            BPregDate.Value = DateTime.Today.Date;
+            BExCalve.Value = DateTime.Today.Date;
+            BDCalved.Value = DateTime.Today.Date;
+            BBDate.Value = DateTime.Today.Date;
+            BCName.Text = "";
+            BCAge.Text = "";
+            BRemark.Text = "";
+            key = 0;
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
