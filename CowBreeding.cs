@@ -119,7 +119,10 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            if (BCowID.SelectedIndex == -1 || BCName.Text == "" || BCAge.Text == "" || BRemark.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
         }
 
         private void BCowID_SelectionChangeCommitted(object sender, EventArgs e)
