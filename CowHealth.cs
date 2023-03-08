@@ -121,7 +121,22 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Information");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "insert into HealthTbl values('" + CID.SelectedValue.ToString() + "','" + CName.Text + "','" + HDDate.Value.Date.ToShortDateString() + "','" + HEvent.Text + "','" + HDiag.Text + "','" + HTreat.Text + "', " + HCOT.Text + ", '" + HVName.Text + "')";
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
         }
 
         private void CID_SelectionChangeCommitted(object sender, EventArgs e)
@@ -133,11 +148,11 @@ namespace Cow_Farm_System
         {
             CID.SelectedValue = HList.SelectedRows[0].Cells[1].Value.ToString();
             CName.Text = HList.SelectedRows[0].Cells[2].Value.ToString();
-            HEvent.Text = HList.SelectedRows[0].Cells[3].Value.ToString();
-            HDiag.Text = HList.SelectedRows[0].Cells[4].Value.ToString();
-            HTreat.Text = HList.SelectedRows[0].Cells[5].Value.ToString();
-            HCOT.Text = HList.SelectedRows[0].Cells[6].Value.ToString();
-            HVName.Text = HList.SelectedRows[0].Cells[7].Value.ToString();
+            HEvent.Text = HList.SelectedRows[0].Cells[4].Value.ToString();
+            HDiag.Text = HList.SelectedRows[0].Cells[5].Value.ToString();
+            HTreat.Text = HList.SelectedRows[0].Cells[6].Value.ToString();
+            HCOT.Text = HList.SelectedRows[0].Cells[7].Value.ToString();
+            HVName.Text = HList.SelectedRows[0].Cells[8].Value.ToString();
             if (CName.Text == "")
             {
                 key = 0;
