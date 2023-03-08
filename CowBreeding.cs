@@ -123,6 +123,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Data");
             }
+            else
+            {
+                try
+                {
+                    String Query = "insert into BreedTbl values('" + BHDate.Value.Date.ToShortDateString() + "','" + BBDate.Value.Date.ToShortDateString() + "'," + Convert.ToInt32(BCowID.SelectedValue.ToString()) + ",'" + BCName.Text + "','" + BPregDate.Value.Date.ToShortDateString() + "','" + BExCalve.Value.Date.ToShortDateString() + "', '" + BDCalved.Value.Date.ToShortDateString() + "', " + Convert.ToInt32(BCAge.Text) + ", '" + BRemark.Text + "')";
+                    Con.SetData(Query);
+                    showBreading();
+                    Clear();
+                    MessageBox.Show("Breading Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void BCowID_SelectionChangeCommitted(object sender, EventArgs e)
