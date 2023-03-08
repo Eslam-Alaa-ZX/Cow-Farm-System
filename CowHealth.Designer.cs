@@ -77,6 +77,8 @@ namespace Cow_Farm_System
             this.label19 = new System.Windows.Forms.Label();
             this.HList = new System.Windows.Forms.DataGridView();
             this.CID = new System.Windows.Forms.ComboBox();
+            this.HDDate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -392,7 +394,7 @@ namespace Cow_Farm_System
             // HVName
             // 
             this.HVName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HVName.Location = new System.Drawing.Point(908, 239);
+            this.HVName.Location = new System.Drawing.Point(759, 241);
             this.HVName.Name = "HVName";
             this.HVName.Size = new System.Drawing.Size(187, 33);
             this.HVName.TabIndex = 7;
@@ -469,7 +471,7 @@ namespace Cow_Farm_System
             // HCOT
             // 
             this.HCOT.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HCOT.Location = new System.Drawing.Point(661, 239);
+            this.HCOT.Location = new System.Drawing.Point(536, 241);
             this.HCOT.Name = "HCOT";
             this.HCOT.Size = new System.Drawing.Size(187, 33);
             this.HCOT.TabIndex = 19;
@@ -479,7 +481,7 @@ namespace Cow_Farm_System
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(656, 209);
+            this.label16.Location = new System.Drawing.Point(531, 211);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(170, 23);
             this.label16.TabIndex = 18;
@@ -488,7 +490,7 @@ namespace Cow_Farm_System
             // HTreat
             // 
             this.HTreat.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.HTreat.Location = new System.Drawing.Point(408, 239);
+            this.HTreat.Location = new System.Drawing.Point(297, 241);
             this.HTreat.Name = "HTreat";
             this.HTreat.Size = new System.Drawing.Size(187, 33);
             this.HTreat.TabIndex = 17;
@@ -498,7 +500,7 @@ namespace Cow_Farm_System
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(403, 209);
+            this.label17.Location = new System.Drawing.Point(292, 211);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(102, 23);
             this.label17.TabIndex = 16;
@@ -509,7 +511,7 @@ namespace Cow_Farm_System
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(904, 209);
+            this.label18.Location = new System.Drawing.Point(755, 211);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(103, 23);
             this.label18.TabIndex = 14;
@@ -608,12 +610,36 @@ namespace Cow_Farm_System
             this.CID.TabIndex = 30;
             this.CID.SelectionChangeCommitted += new System.EventHandler(this.CID_SelectionChangeCommitted);
             // 
+            // HDDate
+            // 
+            this.HDDate.CustomFormat = "yyyy-MM-dd";
+            this.HDDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.HDDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.HDDate.Location = new System.Drawing.Point(996, 241);
+            this.HDDate.Name = "HDDate";
+            this.HDDate.Size = new System.Drawing.Size(200, 33);
+            this.HDDate.TabIndex = 32;
+            this.HDDate.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(993, 211);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 23);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Diagnosis Date";
+            // 
             // CowHealth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.HDDate);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.CID);
             this.Controls.Add(this.HList);
             this.Controls.Add(this.label19);
@@ -722,5 +748,7 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView HList;
         private System.Windows.Forms.ComboBox CID;
+        private System.Windows.Forms.DateTimePicker HDDate;
+        private System.Windows.Forms.Label label4;
     }
 }

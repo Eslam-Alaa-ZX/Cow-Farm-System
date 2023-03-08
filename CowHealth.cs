@@ -19,6 +19,13 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             getCowId();
+            showHealth();
+        }
+
+        private void showHealth()
+        {
+            String Query = "Select * from MilkTbl";
+            HList.DataSource = Con.GetData(Query);
         }
 
         private void getCowId()
