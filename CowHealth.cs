@@ -24,7 +24,7 @@ namespace Cow_Farm_System
 
         private void showHealth()
         {
-            String Query = "Select * from MilkTbl";
+            String Query = "Select * from HealthTbl";
             HList.DataSource = Con.GetData(Query);
         }
 
