@@ -20,6 +20,13 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             getCowId();
+            showMilk();
+        }
+
+        private void showMilk()
+        {
+            String Query = "Select * from MilkTbl";
+            MList.DataSource = Con.GetData(Query);
         }
 
         private void getCowId()
@@ -109,7 +116,7 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void CID_SelectionChangeCommitted(object sender, EventArgs e)
