@@ -98,6 +98,7 @@ namespace Cow_Farm_System
             CAge.Text = age.ToString();
             CWAB.Text = "";
             CPasture.Text = "";
+            key = 0;
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
