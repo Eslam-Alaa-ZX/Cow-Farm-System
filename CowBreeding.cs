@@ -149,5 +149,13 @@ namespace Cow_Farm_System
         {
             Clear();
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (BCowID.SelectedIndex == -1 || BCName.Text == "" || BCAge.Text == "" || BRemark.Text == "")
+            {
+                MessageBox.Show("Missing Data");
+            }
+        }
     }
 }
