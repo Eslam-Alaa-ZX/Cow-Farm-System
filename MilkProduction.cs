@@ -112,6 +112,7 @@ namespace Cow_Farm_System
             MNoon.Text = "";
             MPm.Text = "";
             MTotal.Text = "";
+            key = 0;
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
@@ -155,7 +156,25 @@ namespace Cow_Farm_System
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-
+            if (CName.Text == "" || CID.SelectedIndex == -1 || MAm.Text == "" || MNoon.Text == "" || MPm.Text == "" || MTotal.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    String Query = "Update MilkTbl set CowName='" + CName.Text + "',AmMilk=" + Convert.ToInt32(MAm.Text) + ",NoonMilk=" + Convert.ToInt32(MNoon.Text) + ",PmMilk=" + Convert.ToInt32(MPm.Text) + ",TotalMilk=" + Convert.ToInt32(MTotal.Text) + ",DateProd= '" + MDate.Value.Date.ToShortDateString() + "' where MId=" + key + " ";
+                    Con.SetData(Query);
+                    showMilk();
+                    Clear();
+                    MessageBox.Show("Milk Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void MList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
