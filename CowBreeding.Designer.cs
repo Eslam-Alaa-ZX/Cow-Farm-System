@@ -594,6 +594,7 @@ namespace Cow_Farm_System
             this.BList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.BList.Size = new System.Drawing.Size(887, 326);
             this.BList.TabIndex = 28;
+            this.BList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.BList_CellMouseClick);
             // 
             // BHDate
             // 

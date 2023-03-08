@@ -196,5 +196,27 @@ namespace Cow_Farm_System
                 }
             }
         }
+
+        private void BList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            BHDate.Text = BList.SelectedRows[0].Cells[1].Value.ToString();
+            BBDate.Text = BList.SelectedRows[0].Cells[2].Value.ToString();
+            BCowID.SelectedValue = BList.SelectedRows[0].Cells[3].Value.ToString();
+            BCName.Text = BList.SelectedRows[0].Cells[4].Value.ToString();
+            BPregDate.Text = BList.SelectedRows[0].Cells[5].Value.ToString();
+            BExCalve.Text = BList.SelectedRows[0].Cells[6].Value.ToString();
+            BDCalved.Text = BList.SelectedRows[0].Cells[7].Value.ToString();
+            BCAge.Text = BList.SelectedRows[0].Cells[8].Value.ToString();
+            BRemark.Text = BList.SelectedRows[0].Cells[9].Value.ToString();
+            if (BCName.Text == "")
+            {
+                key = 0;
+
+            }
+            else
+            {
+                key = Convert.ToInt32(BList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
