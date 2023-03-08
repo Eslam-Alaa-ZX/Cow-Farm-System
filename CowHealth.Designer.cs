@@ -590,11 +590,12 @@ namespace Cow_Farm_System
             // 
             this.HList.AllowUserToAddRows = false;
             this.HList.AllowUserToDeleteRows = false;
-            this.HList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.HList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.HList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.HList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HList.Location = new System.Drawing.Point(298, 440);
             this.HList.Name = "HList";
+            this.HList.ReadOnly = true;
             this.HList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.HList.Size = new System.Drawing.Size(887, 326);
             this.HList.TabIndex = 28;
