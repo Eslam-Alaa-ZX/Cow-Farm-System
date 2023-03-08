@@ -401,6 +401,7 @@ namespace Cow_Farm_System
             // 
             // CName
             // 
+            this.CName.Enabled = false;
             this.CName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.CName.Location = new System.Drawing.Point(536, 144);
             this.CName.Name = "CName";
@@ -482,6 +483,7 @@ namespace Cow_Farm_System
             this.MPm.Name = "MPm";
             this.MPm.Size = new System.Drawing.Size(187, 33);
             this.MPm.TabIndex = 17;
+            this.MPm.Leave += new System.EventHandler(this.MPm_Leave);
             // 
             // label17
             // 
@@ -606,6 +608,7 @@ namespace Cow_Farm_System
             this.CID.Name = "CID";
             this.CID.Size = new System.Drawing.Size(196, 32);
             this.CID.TabIndex = 29;
+            this.CID.SelectionChangeCommitted += new System.EventHandler(this.CID_SelectionChangeCommitted);
             // 
             // MilkProduction
             // 

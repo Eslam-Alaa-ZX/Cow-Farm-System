@@ -26,7 +26,16 @@ namespace Cow_Farm_System
         {
             string Query = "Select CowId from CowTbl";
             CID.ValueMember = "CowId";
-           CID.DataSource = Con.GetData(Query);
+            CID.DataSource = Con.GetData(Query);
+        }
+
+        private void getCowName()
+        {
+            string Query = "Select * from CowTbl where CowId="+CID.SelectedValue+"";
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                CName.Text = dr["CowName"].ToString();
+            }
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -91,6 +100,17 @@ namespace Cow_Farm_System
         private void SaveBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CID_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            getCowName();
+        }
+
+        private void MPm_Leave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(MAm.Text) + Convert.ToInt32(MNoon.Text) + Convert.ToInt32(MPm.Text);
+            MTotal.Text = total.ToString();
         }
     }
 }
