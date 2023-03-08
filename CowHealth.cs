@@ -105,5 +105,24 @@ namespace Cow_Farm_System
         {
             getCowName();
         }
+
+        private void HList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            CID.SelectedValue = HList.SelectedRows[0].Cells[1].Value.ToString();
+            CName.Text = HList.SelectedRows[0].Cells[2].Value.ToString();
+            HEvent.Text = HList.SelectedRows[0].Cells[3].Value.ToString();
+            HDiag.Text = HList.SelectedRows[0].Cells[4].Value.ToString();
+            HTreat.Text = HList.SelectedRows[0].Cells[5].Value.ToString();
+            HCOT.Text = HList.SelectedRows[0].Cells[6].Value.ToString();
+            HVName.Text = HList.SelectedRows[0].Cells[7].Value.ToString();
+            if (CName.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(HList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }

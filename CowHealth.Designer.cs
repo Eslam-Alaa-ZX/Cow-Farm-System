@@ -596,6 +596,7 @@ namespace Cow_Farm_System
             this.HList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.HList.Size = new System.Drawing.Size(887, 326);
             this.HList.TabIndex = 28;
+            this.HList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.HList_CellMouseClick);
             // 
             // CID
             // 
