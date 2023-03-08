@@ -168,5 +168,14 @@ namespace Cow_Farm_System
         {
             Clear();
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            if (CName.Text == "" || CID.SelectedIndex == -1 || HEvent.Text == "" || HDiag.Text == "" || HTreat.Text == "" || HCOT.Text == "" || HVName.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            
+        }
     }
 }

@@ -546,6 +546,7 @@ namespace Cow_Farm_System
             this.EditBtn.TabIndex = 24;
             this.EditBtn.Text = "Edit";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
