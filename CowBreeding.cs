@@ -41,6 +41,7 @@ namespace Cow_Farm_System
             foreach (DataRow dr in Con.GetData(Query).Rows)
             {
                 BCName.Text = dr["CowName"].ToString();
+                BCAge.Text = dr["Age"].ToString();
             }
         }
 
