@@ -198,7 +198,22 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Please Sellect a Health Report!!!");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "Delete from HealthTbl where RepId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showHealth();
+                    Clear();
+                    MessageBox.Show("Health Report Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
