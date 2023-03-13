@@ -105,19 +105,12 @@ namespace Cow_Farm_System
 
         private void Clear()
         {
-            EDate.Value = DateTime.Today.Date;
-            EName.Text = "";
-            EPass.Text = "";
-            HEvent.Text = "";
-            EPhon.Text = "";
-            HDiag.Text = "";
-            EAdd.Text = "";
-            key = 0;
+            
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || HEvent.Text == "" || HDiag.Text == "" || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -125,11 +118,11 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "insert into HealthTbl values('" + EGen.SelectedValue.ToString() + "','" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + HEvent.Text + "','" + HDiag.Text + "','" + EPhon.Text + "', " + EAdd.Text + ", '" + EPass.Text + "')";
+                    String Query = "insert into EmployeeTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedValue.ToString() + "','" + EPhon.Text + "', " + EAdd.Text + ", '" + EPass.Text + "')";
                     Con.SetData(Query);
                     showHealth();
                     Clear();
-                    MessageBox.Show("Health Report Added!!!");
+                    MessageBox.Show("Employee Added!!!");
                 }
                 catch (Exception ex)
                 {
