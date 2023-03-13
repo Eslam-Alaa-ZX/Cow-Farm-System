@@ -105,7 +105,13 @@ namespace Cow_Farm_System
 
         private void Clear()
         {
-            
+            EDate.Value = DateTime.Today.Date;
+            EName.Text = "";
+            EPass.Text = "";
+            EPhon.Text = "";
+            EAdd.Text = "";
+            EGen.SelectedIndex = -1;
+            key = 0;
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
