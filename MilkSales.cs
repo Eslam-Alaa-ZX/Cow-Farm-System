@@ -19,6 +19,7 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             getEmpId();
+            showSales();
         }
 
         private void getEmpId()
@@ -26,6 +27,12 @@ namespace Cow_Farm_System
             string Query = "Select EmpId from EmpTbl";
             EID.ValueMember = "EmpId";
             EID.DataSource = Con.GetData(Query);
+        }
+
+        private void showSales()
+        {
+            String Query = "Select * from MilkSalesTbl";
+            SList.DataSource = Con.GetData(Query);
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -89,7 +96,7 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void SQuantity_Leave(object sender, EventArgs e)
