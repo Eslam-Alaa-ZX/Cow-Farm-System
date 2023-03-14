@@ -128,7 +128,19 @@ namespace Cow_Farm_System
             }
             else
             {
-                
+                try
+                {
+                    String Query = "Delete from EmpTbl where EmpId = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    showEmployees();
+                    Clear();
+                    MessageBox.Show("Employee Deleted!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }
