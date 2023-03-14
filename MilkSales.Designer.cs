@@ -75,6 +75,8 @@ namespace Cow_Farm_System
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.SList = new System.Windows.Forms.DataGridView();
+            this.EID = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -389,7 +391,7 @@ namespace Cow_Farm_System
             // SPrice
             // 
             this.SPrice.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.SPrice.Location = new System.Drawing.Point(632, 144);
+            this.SPrice.Location = new System.Drawing.Point(771, 144);
             this.SPrice.Name = "SPrice";
             this.SPrice.Size = new System.Drawing.Size(187, 33);
             this.SPrice.TabIndex = 9;
@@ -399,7 +401,7 @@ namespace Cow_Farm_System
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(627, 114);
+            this.label12.Location = new System.Drawing.Point(766, 114);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 23);
             this.label12.TabIndex = 8;
@@ -408,7 +410,7 @@ namespace Cow_Farm_System
             // SCName
             // 
             this.SCName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.SCName.Location = new System.Drawing.Point(940, 144);
+            this.SCName.Location = new System.Drawing.Point(1015, 144);
             this.SCName.Name = "SCName";
             this.SCName.Size = new System.Drawing.Size(187, 33);
             this.SCName.TabIndex = 11;
@@ -418,7 +420,7 @@ namespace Cow_Farm_System
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(935, 114);
+            this.label14.Location = new System.Drawing.Point(1010, 114);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(126, 23);
             this.label14.TabIndex = 10;
@@ -465,7 +467,7 @@ namespace Cow_Farm_System
             // SCPhone
             // 
             this.SCPhone.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.SCPhone.Location = new System.Drawing.Point(299, 239);
+            this.SCPhone.Location = new System.Drawing.Point(311, 239);
             this.SCPhone.Name = "SCPhone";
             this.SCPhone.Size = new System.Drawing.Size(187, 33);
             this.SCPhone.TabIndex = 17;
@@ -475,7 +477,7 @@ namespace Cow_Farm_System
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label17.Location = new System.Drawing.Point(294, 209);
+            this.label17.Location = new System.Drawing.Point(306, 209);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(126, 23);
             this.label17.TabIndex = 16;
@@ -486,7 +488,7 @@ namespace Cow_Farm_System
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(294, 114);
+            this.label18.Location = new System.Drawing.Point(512, 114);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(54, 23);
             this.label18.TabIndex = 14;
@@ -498,7 +500,7 @@ namespace Cow_Farm_System
             this.SDate.CustomFormat = "yyyy-MM-dd";
             this.SDate.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.SDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.SDate.Location = new System.Drawing.Point(297, 144);
+            this.SDate.Location = new System.Drawing.Point(515, 144);
             this.SDate.Name = "SDate";
             this.SDate.Size = new System.Drawing.Size(200, 33);
             this.SDate.TabIndex = 22;
@@ -584,12 +586,34 @@ namespace Cow_Farm_System
             this.SList.Size = new System.Drawing.Size(887, 326);
             this.SList.TabIndex = 28;
             // 
+            // EID
+            // 
+            this.EID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.EID.FormattingEnabled = true;
+            this.EID.Location = new System.Drawing.Point(268, 145);
+            this.EID.Name = "EID";
+            this.EID.Size = new System.Drawing.Size(196, 32);
+            this.EID.TabIndex = 31;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(264, 114);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(126, 23);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Employee ID";
+            // 
             // MilkSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.EID);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.SList);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ClearBtn);
@@ -694,5 +718,7 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView SList;
+        private System.Windows.Forms.ComboBox EID;
+        private System.Windows.Forms.Label label11;
     }
 }
