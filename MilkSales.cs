@@ -18,9 +18,15 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
             Con = new Functions();
+            getEmpId();
         }
 
-        
+        private void getEmpId()
+        {
+            string Query = "Select EmpId from EmpTbl";
+            EID.ValueMember = "EmpId";
+            EID.DataSource = Con.GetData(Query);
+        }
 
         private void label18_Click(object sender, EventArgs e)
         {
