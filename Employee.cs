@@ -105,7 +105,18 @@ namespace Cow_Farm_System
             }
             else
             {
-                
+                try
+                {
+                    String Query = "update EmpTbl set EmpName='" + EName.Text + "',EmpDob= '" + EDate.Value.Date.ToShortDateString() + "',Gender='" + EGen.SelectedItem.ToString() + "',Phone='" + EPhon.Text + "',Address='" + EAdd.Text + "' where EmpId=" + key + " ";
+                    Con.SetData(Query);
+                    showEmployees();
+                    Clear();
+                    MessageBox.Show("Employee Edited!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
