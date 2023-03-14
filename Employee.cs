@@ -18,23 +18,13 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
             Con = new Functions();
-            showHealth();
+            showEmployees();
         }
 
-        private void showHealth()
+        private void showEmployees()
         {
-            String Query = "Select * from HealthTbl";
+            String Query = "Select * from EmpTbl";
             EList.DataSource = Con.GetData(Query);
-        }
-
-
-        private void getCowName()
-        {
-            string Query = "Select * from CowTbl where CowId=" + EGen.SelectedValue + "";
-            foreach (DataRow dr in Con.GetData(Query).Rows)
-            {
-                EName.Text = dr["CowName"].ToString();
-            }
         }
 
         private void label18_Click(object sender, EventArgs e)
@@ -71,7 +61,7 @@ namespace Cow_Farm_System
                 {
                     String Query = "insert into EmpTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedItem.ToString() + "','" + EPhon.Text + "', '" + EAdd.Text + "')";
                     Con.SetData(Query);
-                    showHealth();
+                    showEmployees();
                     Clear();
                     MessageBox.Show("Employee Added!!!");
                 }
@@ -119,7 +109,7 @@ namespace Cow_Farm_System
                 {
                     String Query = "update HealthTbl set CowId='" + EGen.SelectedValue.ToString() + "',CowName= '" + EName.Text + "',RepDate='" + EDate.Value.Date.ToShortDateString() + ",Treatment='" + EPhon.Text + "',Cost=" + EAdd.Text + ",VetName='" + EPass.Text + "' where RepId=" + key + " ";
                     Con.SetData(Query);
-                    showHealth();
+                    showEmployees();
                     Clear();
                     MessageBox.Show("Health Report Edited!!!");
                 }
@@ -143,7 +133,7 @@ namespace Cow_Farm_System
                     String Query = "Delete from HealthTbl where RepId = {0}";
                     Query = string.Format(Query, key);
                     Con.SetData(Query);
-                    showHealth();
+                    showEmployees();
                     Clear();
                     MessageBox.Show("Health Report Deleted!!!");
                 }
