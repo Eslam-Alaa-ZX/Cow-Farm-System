@@ -452,6 +452,7 @@ namespace Cow_Farm_System
             this.SQuantity.Name = "SQuantity";
             this.SQuantity.Size = new System.Drawing.Size(187, 33);
             this.SQuantity.TabIndex = 19;
+            this.SQuantity.Leave += new System.EventHandler(this.SQuantity_Leave);
             // 
             // label16
             // 

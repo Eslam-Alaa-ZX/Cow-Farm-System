@@ -91,5 +91,11 @@ namespace Cow_Farm_System
         {
 
         }
+
+        private void SQuantity_Leave(object sender, EventArgs e)
+        {
+            int total = Convert.ToInt32(SPrice.Text) * Convert.ToInt32(SQuantity.Text);
+            STotal.Text = total.ToString();
+        }
     }
 }
