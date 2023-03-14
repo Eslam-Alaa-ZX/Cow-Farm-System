@@ -12,10 +12,15 @@ namespace Cow_Farm_System
 {
     public partial class MilkSales : Form
     {
+        Functions Con;
+        int key = 0;
         public MilkSales()
         {
             InitializeComponent();
+            Con = new Functions();
         }
+
+        
 
         private void label18_Click(object sender, EventArgs e)
         {
@@ -74,6 +79,11 @@ namespace Cow_Farm_System
             Cows page = new Cows();
             page.Show();
             this.Hide();
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
