@@ -124,23 +124,11 @@ namespace Cow_Farm_System
         {
             if (key == 0)
             {
-                MessageBox.Show("Please Sellect a Health Report!!!");
+                MessageBox.Show("Please Sellect a Employee!!!");
             }
             else
             {
-                try
-                {
-                    String Query = "Delete from HealthTbl where RepId = {0}";
-                    Query = string.Format(Query, key);
-                    Con.SetData(Query);
-                    showEmployees();
-                    Clear();
-                    MessageBox.Show("Health Report Deleted!!!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                
             }
         }
     }
