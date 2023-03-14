@@ -111,7 +111,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Information");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "insert into MilkSalesTbl values('" + SDate.Value.Date.ToShortDateString() + "'," + Convert.ToInt32(SPrice.Text) + ",'" + SCName.Text + "','" + SCPhone.Text + "'," + Convert.ToInt32(EID.SelectedValue.ToString()) + "," + Convert.ToInt32(SQuantity.Text) + ", " + Convert.ToInt32(STotal.Text) + ")";
+                    Con.SetData(Query);
+                    showSales();
+                    Clear();
+                    MessageBox.Show("Sales Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void SQuantity_Leave(object sender, EventArgs e)
