@@ -549,11 +549,12 @@ namespace Cow_Farm_System
             // 
             this.SList.AllowUserToAddRows = false;
             this.SList.AllowUserToDeleteRows = false;
-            this.SList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.SList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.SList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.SList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SList.Location = new System.Drawing.Point(298, 440);
             this.SList.Name = "SList";
+            this.SList.ReadOnly = true;
             this.SList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SList.Size = new System.Drawing.Size(887, 326);
             this.SList.TabIndex = 28;
