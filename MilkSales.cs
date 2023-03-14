@@ -107,6 +107,10 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            if (SCName.Text == "" || EID.SelectedIndex == -1 || SPrice.Text == "" || SQuantity.Text == "" || STotal.Text == "" || SCPhone.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
             
         }
 
