@@ -76,12 +76,12 @@ namespace Cow_Farm_System
 
         private void HList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            EGen.SelectedValue = EList.SelectedRows[0].Cells[1].Value.ToString();
-            EName.Text = EList.SelectedRows[0].Cells[2].Value.ToString();
-            EDate.Text = EList.SelectedRows[0].Cells[3].Value.ToString();
-            EPhon.Text = EList.SelectedRows[0].Cells[6].Value.ToString();
-            EAdd.Text = EList.SelectedRows[0].Cells[7].Value.ToString();
-            EPass.Text = EList.SelectedRows[0].Cells[8].Value.ToString();
+            EName.Text = EList.SelectedRows[0].Cells[1].Value.ToString();
+            EDate.Text = EList.SelectedRows[0].Cells[2].Value.ToString();
+            EGen.SelectedItem = EList.SelectedRows[0].Cells[3].Value.ToString();
+            EPhon.Text = EList.SelectedRows[0].Cells[4].Value.ToString();
+            EAdd.Text = EList.SelectedRows[0].Cells[5].Value.ToString();
+            //EPass.Text = EList.SelectedRows[0].Cells[6].Value.ToString();
             if (EName.Text == "")
             {
                 key = 0;
