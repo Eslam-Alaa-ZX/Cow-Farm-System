@@ -70,8 +70,6 @@ namespace Cow_Farm_System
             this.label18 = new System.Windows.Forms.Label();
             this.SDate = new System.Windows.Forms.DateTimePicker();
             this.SaveBtn = new System.Windows.Forms.Button();
-            this.EditBtn = new System.Windows.Forms.Button();
-            this.DeleteBtn = new System.Windows.Forms.Button();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.SList = new System.Windows.Forms.DataGridView();
@@ -514,41 +512,13 @@ namespace Cow_Farm_System
             this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.SaveBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBtn.Location = new System.Drawing.Point(379, 307);
+            this.SaveBtn.Location = new System.Drawing.Point(559, 307);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(139, 44);
             this.SaveBtn.TabIndex = 23;
             this.SaveBtn.Text = "Save";
             this.SaveBtn.UseVisualStyleBackColor = false;
             this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
-            // 
-            // EditBtn
-            // 
-            this.EditBtn.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.EditBtn.FlatAppearance.BorderSize = 0;
-            this.EditBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.EditBtn.ForeColor = System.Drawing.Color.White;
-            this.EditBtn.Location = new System.Drawing.Point(574, 307);
-            this.EditBtn.Name = "EditBtn";
-            this.EditBtn.Size = new System.Drawing.Size(139, 44);
-            this.EditBtn.TabIndex = 24;
-            this.EditBtn.Text = "Edit";
-            this.EditBtn.UseVisualStyleBackColor = false;
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.DeleteBtn.FlatAppearance.BorderSize = 0;
-            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(758, 307);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(139, 44);
-            this.DeleteBtn.TabIndex = 25;
-            this.DeleteBtn.Text = "Delete";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
             // ClearBtn
             // 
@@ -557,7 +527,7 @@ namespace Cow_Farm_System
             this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.ClearBtn.ForeColor = System.Drawing.Color.White;
-            this.ClearBtn.Location = new System.Drawing.Point(952, 307);
+            this.ClearBtn.Location = new System.Drawing.Point(805, 307);
             this.ClearBtn.Name = "ClearBtn";
             this.ClearBtn.Size = new System.Drawing.Size(139, 44);
             this.ClearBtn.TabIndex = 26;
@@ -619,8 +589,6 @@ namespace Cow_Farm_System
             this.Controls.Add(this.SList);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.ClearBtn);
-            this.Controls.Add(this.DeleteBtn);
-            this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.SDate);
             this.Controls.Add(this.STotal);
@@ -715,8 +683,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.DateTimePicker SDate;
         private System.Windows.Forms.Button SaveBtn;
-        private System.Windows.Forms.Button EditBtn;
-        private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button ClearBtn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView SList;
