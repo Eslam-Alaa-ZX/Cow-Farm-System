@@ -18,7 +18,6 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
             Con = new Functions();
-            getCowId();
             showHealth();
         }
 
@@ -28,12 +27,6 @@ namespace Cow_Farm_System
             EList.DataSource = Con.GetData(Query);
         }
 
-        private void getCowId()
-        {
-            string Query = "Select CowId from CowTbl";
-            EGen.ValueMember = "CowId";
-            EGen.DataSource = Con.GetData(Query);
-        }
 
         private void getCowName()
         {
@@ -54,54 +47,6 @@ namespace Cow_Farm_System
 
         }
 
-        private void DashboardPg_Click(object sender, EventArgs e)
-        {
-            DashBoard page = new DashBoard();
-            page.Show();
-            this.Hide();
-        }
-
-        private void FinancePg_Click(object sender, EventArgs e)
-        {
-            Finance page = new Finance();
-            page.Show();
-            this.Hide();
-        }
-
-        private void SalesPg_Click(object sender, EventArgs e)
-        {
-            MilkSales page = new MilkSales();
-            page.Show();
-            this.Hide();
-        }
-
-        private void BreadingPg_Click(object sender, EventArgs e)
-        {
-            CowBreeding page = new CowBreeding();
-            page.Show();
-            this.Hide();
-        }
-
-        private void HealthPg_Click(object sender, EventArgs e)
-        {
-            Employees page = new CowHealth();
-            page.Show();
-            this.Hide();
-        }
-
-        private void MilkPg_Click(object sender, EventArgs e)
-        {
-            MilkProduction page = new MilkProduction();
-            page.Show();
-            this.Hide();
-        }
-
-        private void CowsPg_Click(object sender, EventArgs e)
-        {
-            Cows page = new Cows();
-            page.Show();
-            this.Hide();
-        }
 
         private void Clear()
         {
@@ -116,7 +61,7 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" /*|| EPass.Text == ""*/)
             {
                 MessageBox.Show("Missing Information");
             }
@@ -124,7 +69,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "insert into EmployeeTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedValue.ToString() + "','" + EPhon.Text + "', " + EAdd.Text + ", '" + EPass.Text + "')";
+                    String Query = "insert into EmpTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedItem.ToString() + "','" + EPhon.Text + "', '" + EAdd.Text + "')";
                     Con.SetData(Query);
                     showHealth();
                     Clear();
@@ -138,18 +83,12 @@ namespace Cow_Farm_System
 
         }
 
-        private void CID_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            getCowName();
-        }
 
         private void HList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             EGen.SelectedValue = EList.SelectedRows[0].Cells[1].Value.ToString();
             EName.Text = EList.SelectedRows[0].Cells[2].Value.ToString();
             EDate.Text = EList.SelectedRows[0].Cells[3].Value.ToString();
-            HEvent.Text = EList.SelectedRows[0].Cells[4].Value.ToString();
-            HDiag.Text = EList.SelectedRows[0].Cells[5].Value.ToString();
             EPhon.Text = EList.SelectedRows[0].Cells[6].Value.ToString();
             EAdd.Text = EList.SelectedRows[0].Cells[7].Value.ToString();
             EPass.Text = EList.SelectedRows[0].Cells[8].Value.ToString();
@@ -170,7 +109,7 @@ namespace Cow_Farm_System
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || HEvent.Text == "" || HDiag.Text == "" || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -178,7 +117,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "update HealthTbl set CowId='" + EGen.SelectedValue.ToString() + "',CowName= '" + EName.Text + "',RepDate='" + EDate.Value.Date.ToShortDateString() + "',Event='" + HEvent.Text + "',Diagnosis='" + HDiag.Text + "',Treatment='" + EPhon.Text + "',Cost=" + EAdd.Text + ",VetName='" + EPass.Text + "' where RepId=" + key + " ";
+                    String Query = "update HealthTbl set CowId='" + EGen.SelectedValue.ToString() + "',CowName= '" + EName.Text + "',RepDate='" + EDate.Value.Date.ToShortDateString() + ",Treatment='" + EPhon.Text + "',Cost=" + EAdd.Text + ",VetName='" + EPass.Text + "' where RepId=" + key + " ";
                     Con.SetData(Query);
                     showHealth();
                     Clear();

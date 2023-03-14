@@ -31,6 +31,7 @@ namespace Cow_Farm_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employees));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,12 +55,11 @@ namespace Cow_Farm_System
             this.EGen = new System.Windows.Forms.ComboBox();
             this.EDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,6 +73,16 @@ namespace Cow_Farm_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(225, 788);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(56, 679);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(99, 87);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -149,7 +159,6 @@ namespace Cow_Farm_System
             // 
             // EName
             // 
-            this.EName.Enabled = false;
             this.EName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.EName.Location = new System.Drawing.Point(376, 144);
             this.EName.Name = "EName";
@@ -307,11 +316,13 @@ namespace Cow_Farm_System
             // 
             this.EGen.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.EGen.FormattingEnabled = true;
+            this.EGen.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.EGen.Location = new System.Drawing.Point(912, 145);
             this.EGen.Name = "EGen";
             this.EGen.Size = new System.Drawing.Size(196, 32);
             this.EGen.TabIndex = 30;
-            this.EGen.SelectionChangeCommitted += new System.EventHandler(this.CID_SelectionChangeCommitted);
             // 
             // EDate
             // 
@@ -334,16 +345,6 @@ namespace Cow_Farm_System
             this.label4.Size = new System.Drawing.Size(50, 23);
             this.label4.TabIndex = 31;
             this.label4.Text = "DOB";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(56, 679);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(99, 87);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // Employees
             // 
@@ -378,11 +379,11 @@ namespace Cow_Farm_System
             this.Text = "MilkProduction";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

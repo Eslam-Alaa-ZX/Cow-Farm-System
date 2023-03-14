@@ -29,6 +29,7 @@ namespace Cow_Farm_System
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cows));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -81,6 +82,7 @@ namespace Cow_Farm_System
             this.CowGV = new System.Windows.Forms.DataGridView();
             this.CFilter = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -653,6 +655,11 @@ namespace Cow_Farm_System
             this.label4.TabIndex = 29;
             this.label4.Text = "Filter";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // Cows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -775,5 +782,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.DataGridView CowGV;
         private System.Windows.Forms.TextBox CFilter;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
