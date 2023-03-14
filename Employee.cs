@@ -99,24 +99,13 @@ namespace Cow_Farm_System
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" /*|| EPass.Text == ""*/)
             {
                 MessageBox.Show("Missing Information");
             }
             else
             {
-                try
-                {
-                    String Query = "update HealthTbl set CowId='" + EGen.SelectedValue.ToString() + "',CowName= '" + EName.Text + "',RepDate='" + EDate.Value.Date.ToShortDateString() + ",Treatment='" + EPhon.Text + "',Cost=" + EAdd.Text + ",VetName='" + EPass.Text + "' where RepId=" + key + " ";
-                    Con.SetData(Query);
-                    showEmployees();
-                    Clear();
-                    MessageBox.Show("Health Report Edited!!!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                
             }
         }
 
