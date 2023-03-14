@@ -94,6 +94,17 @@ namespace Cow_Farm_System
             this.Hide();
         }
 
+        private void Clear()
+        {
+            SDate.Value = DateTime.Today.Date;
+            SCName.Text = "";
+            SCPhone.Text = "";
+            SPrice.Text = "";
+            SQuantity.Text = "";
+            STotal.Text = "";
+            key = 0;
+        }
+
         private void SaveBtn_Click(object sender, EventArgs e)
         {
             
