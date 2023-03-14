@@ -558,6 +558,7 @@ namespace Cow_Farm_System
             this.SList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.SList.Size = new System.Drawing.Size(887, 326);
             this.SList.TabIndex = 28;
+            this.SList.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.SList_CellMouseClick);
             // 
             // EID
             // 

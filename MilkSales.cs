@@ -133,5 +133,10 @@ namespace Cow_Farm_System
             int total = Convert.ToInt32(SPrice.Text) * Convert.ToInt32(SQuantity.Text);
             STotal.Text = total.ToString();
         }
+
+        private void SList_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
     }
 }
