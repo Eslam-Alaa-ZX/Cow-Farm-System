@@ -617,6 +617,7 @@ namespace Cow_Farm_System
             this.InSave.TabIndex = 35;
             this.InSave.Text = "Save";
             this.InSave.UseVisualStyleBackColor = false;
+            this.InSave.Click += new System.EventHandler(this.InSave_Click);
             // 
             // FInAmo
             // 

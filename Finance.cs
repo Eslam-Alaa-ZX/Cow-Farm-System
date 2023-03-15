@@ -131,5 +131,14 @@ namespace Cow_Farm_System
                 }
             }
         }
+
+        private void InSave_Click(object sender, EventArgs e)
+        {
+            if (FInAmo.Text == "" || FInType.SelectedIndex == -1)
+            {
+                MessageBox.Show("Missing Information");
+            }
+            
+        }
     }
 }
