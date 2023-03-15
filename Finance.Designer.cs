@@ -728,6 +728,7 @@ namespace Cow_Farm_System
             this.FExFilter.Size = new System.Drawing.Size(200, 33);
             this.FExFilter.TabIndex = 42;
             this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
             // 
             // Finance
             // 

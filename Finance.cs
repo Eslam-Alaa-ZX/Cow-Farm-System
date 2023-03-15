@@ -154,5 +154,16 @@ namespace Cow_Farm_System
                 }
             }
         }
+
+        private void FilterExpenditure()
+        {
+            String Query = "Select * from ExpenditureTbl where ExpDate='" + FExFilter.Value.Date.ToShortDateString() + "'";
+            FExList.DataSource = Con.GetData(Query);
+        }
+
+        private void FExFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FilterExpenditure();
+        }
     }
 }
