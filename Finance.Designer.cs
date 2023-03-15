@@ -85,6 +85,7 @@ namespace Cow_Farm_System
             this.label15 = new System.Windows.Forms.Label();
             this.FExFilter = new System.Windows.Forms.DateTimePicker();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -107,6 +108,7 @@ namespace Cow_Farm_System
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -544,6 +546,7 @@ namespace Cow_Farm_System
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.pictureBox10);
             this.panel11.Controls.Add(this.label14);
             this.panel11.Controls.Add(this.FInFilter);
             this.panel11.Controls.Add(this.FInList);
@@ -739,12 +742,22 @@ namespace Cow_Farm_System
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(877, 13);
+            this.pictureBox9.Location = new System.Drawing.Point(872, 13);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(41, 33);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 44;
             this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(871, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 45;
+            this.pictureBox10.TabStop = false;
             // 
             // Finance
             // 
@@ -795,6 +808,7 @@ namespace Cow_Farm_System
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -857,5 +871,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker FExFilter;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }
