@@ -27,6 +27,12 @@ namespace Cow_Farm_System
             FExList.DataSource = Con.GetData(Query);
         }
 
+        private void showIco()
+        {
+            String Query = "Select * from IncomeTbl";
+            FInList.DataSource = Con.GetData(Query);
+        }
+
         private void label18_Click(object sender, EventArgs e)
         {
 
