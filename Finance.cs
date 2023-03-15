@@ -100,7 +100,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Information");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "insert into ExpenditureTbl values('" + FExDate.Value.Date.ToShortDateString() + "','" + FExPorp.SelectedItem.ToString() + "','" + Convert.ToInt32(FExAmo.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    Con.SetData(Query);
+                    showExp();
+                    ClearExp();
+                    MessageBox.Show("Expenditure Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
