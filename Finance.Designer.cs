@@ -419,11 +419,12 @@ namespace Cow_Farm_System
             // 
             this.FExList.AllowUserToAddRows = false;
             this.FExList.AllowUserToDeleteRows = false;
-            this.FExList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.FExList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.FExList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.FExList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FExList.Location = new System.Drawing.Point(271, 52);
             this.FExList.Name = "FExList";
+            this.FExList.ReadOnly = true;
             this.FExList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.FExList.Size = new System.Drawing.Size(634, 273);
             this.FExList.TabIndex = 39;
