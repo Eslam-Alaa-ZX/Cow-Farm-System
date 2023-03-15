@@ -18,9 +18,14 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
             Con = new Functions();
+            showExp();
         }
 
-
+        private void showExp()
+        {
+            String Query = "Select * from ExpenditureTbl";
+            FExList.DataSource = Con.GetData(Query);
+        }
 
         private void label18_Click(object sender, EventArgs e)
         {
