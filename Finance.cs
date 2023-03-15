@@ -96,7 +96,11 @@ namespace Cow_Farm_System
 
         private void ExSave_Click(object sender, EventArgs e)
         {
-
+            if (FExAmo.Text == "" || FExPorp.SelectedIndex == -1 )
+            {
+                MessageBox.Show("Missing Information");
+            }
+            
         }
     }
 }
