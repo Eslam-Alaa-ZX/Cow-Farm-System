@@ -578,6 +578,7 @@ namespace Cow_Farm_System
             this.FInFilter.Size = new System.Drawing.Size(200, 33);
             this.FInFilter.TabIndex = 40;
             this.FInFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            this.FInFilter.ValueChanged += new System.EventHandler(this.FInFilter_ValueChanged);
             // 
             // FInList
             // 

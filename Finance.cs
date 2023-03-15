@@ -161,9 +161,20 @@ namespace Cow_Farm_System
             FExList.DataSource = Con.GetData(Query);
         }
 
+        private void Filterincome()
+        {
+            String Query = "Select * from IncomeTbl where IncDate='" + FInFilter.Value.Date.ToShortDateString() + "'";
+            FInList.DataSource = Con.GetData(Query);
+        }
+
         private void FExFilter_ValueChanged(object sender, EventArgs e)
         {
             FilterExpenditure();
+        }
+
+        private void FInFilter_ValueChanged(object sender, EventArgs e)
+        {
+            Filterincome();
         }
     }
 }
