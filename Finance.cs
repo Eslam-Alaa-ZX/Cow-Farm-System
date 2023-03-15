@@ -86,6 +86,14 @@ namespace Cow_Farm_System
             this.Hide();
         }
 
+        private void ClearExp()
+        {
+            FExDate.Value = DateTime.Today.Date;
+            FExPorp.SelectedIndex = -1;
+            FExAmo.Text = "";
+            key = 0;
+        }
+
         private void ExSave_Click(object sender, EventArgs e)
         {
 
