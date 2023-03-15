@@ -19,6 +19,7 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             showExp();
+            showIco();
         }
 
         private void showExp()
@@ -97,6 +98,14 @@ namespace Cow_Farm_System
             FExDate.Value = DateTime.Today.Date;
             FExPorp.SelectedIndex = -1;
             FExAmo.Text = "";
+            key = 0;
+        }
+
+        private void ClearInc()
+        {
+            FInDate.Value = DateTime.Today.Date;
+            FInType.SelectedIndex = -1;
+            FInAmo.Text = "";
             key = 0;
         }
 
