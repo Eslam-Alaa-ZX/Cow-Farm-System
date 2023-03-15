@@ -186,5 +186,10 @@ namespace Cow_Farm_System
         {
 
         }
+
+        private void ExRef_Click(object sender, EventArgs e)
+        {
+            showExp();
+        }
     }
 }

@@ -84,8 +84,8 @@ namespace Cow_Farm_System
             this.EmpTemp = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.FExFilter = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.ExRef = new System.Windows.Forms.PictureBox();
+            this.IncRef = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -107,8 +107,8 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.FExList)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncRef)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -406,7 +406,7 @@ namespace Cow_Farm_System
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.pictureBox9);
+            this.panel10.Controls.Add(this.ExRef);
             this.panel10.Controls.Add(this.label15);
             this.panel10.Controls.Add(this.FExFilter);
             this.panel10.Controls.Add(this.FExList);
@@ -546,7 +546,7 @@ namespace Cow_Farm_System
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.pictureBox10);
+            this.panel11.Controls.Add(this.IncRef);
             this.panel11.Controls.Add(this.label14);
             this.panel11.Controls.Add(this.FInFilter);
             this.panel11.Controls.Add(this.FInList);
@@ -739,25 +739,26 @@ namespace Cow_Farm_System
             this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
             // 
-            // pictureBox9
+            // ExRef
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(872, 13);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 44;
-            this.pictureBox9.TabStop = false;
+            this.ExRef.Image = ((System.Drawing.Image)(resources.GetObject("ExRef.Image")));
+            this.ExRef.Location = new System.Drawing.Point(872, 13);
+            this.ExRef.Name = "ExRef";
+            this.ExRef.Size = new System.Drawing.Size(41, 33);
+            this.ExRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExRef.TabIndex = 44;
+            this.ExRef.TabStop = false;
+            this.ExRef.Click += new System.EventHandler(this.ExRef_Click);
             // 
-            // pictureBox10
+            // IncRef
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(871, 11);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(41, 33);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 45;
-            this.pictureBox10.TabStop = false;
+            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
+            this.IncRef.Location = new System.Drawing.Point(871, 11);
+            this.IncRef.Name = "IncRef";
+            this.IncRef.Size = new System.Drawing.Size(41, 33);
+            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IncRef.TabIndex = 45;
+            this.IncRef.TabStop = false;
             // 
             // Finance
             // 
@@ -807,8 +808,8 @@ namespace Cow_Farm_System
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IncRef)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -870,7 +871,7 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label EmpTemp;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker FExFilter;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox ExRef;
+        private System.Windows.Forms.PictureBox IncRef;
     }
 }
