@@ -58,17 +58,19 @@ namespace Cow_Farm_System
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.FExDate = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.FExPorp = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.FExList = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.ExSave = new System.Windows.Forms.Button();
             this.FExAmo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ExSave = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.FExList = new System.Windows.Forms.DataGridView();
+            this.FExPorp = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.FExDate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.FInFilter = new System.Windows.Forms.DateTimePicker();
             this.FInList = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.InSave = new System.Windows.Forms.Button();
@@ -79,8 +81,7 @@ namespace Cow_Farm_System
             this.label12 = new System.Windows.Forms.Label();
             this.FInDate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.FInFilter = new System.Windows.Forms.DateTimePicker();
-            this.label14 = new System.Windows.Forms.Label();
+            this.EmpTemp = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -414,6 +415,101 @@ namespace Cow_Farm_System
             this.panel10.Size = new System.Drawing.Size(923, 345);
             this.panel10.TabIndex = 34;
             // 
+            // FExList
+            // 
+            this.FExList.AllowUserToAddRows = false;
+            this.FExList.AllowUserToDeleteRows = false;
+            this.FExList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.FExList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.FExList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FExList.Location = new System.Drawing.Point(271, 52);
+            this.FExList.Name = "FExList";
+            this.FExList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.FExList.Size = new System.Drawing.Size(634, 273);
+            this.FExList.TabIndex = 39;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.Location = new System.Drawing.Point(523, 20);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(168, 25);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Expenditure List";
+            // 
+            // ExSave
+            // 
+            this.ExSave.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ExSave.FlatAppearance.BorderSize = 0;
+            this.ExSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExSave.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.ExSave.ForeColor = System.Drawing.Color.White;
+            this.ExSave.Location = new System.Drawing.Point(42, 292);
+            this.ExSave.Name = "ExSave";
+            this.ExSave.Size = new System.Drawing.Size(139, 44);
+            this.ExSave.TabIndex = 35;
+            this.ExSave.Text = "Save";
+            this.ExSave.UseVisualStyleBackColor = false;
+            this.ExSave.Click += new System.EventHandler(this.ExSave_Click);
+            // 
+            // FExAmo
+            // 
+            this.FExAmo.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.FExAmo.Location = new System.Drawing.Point(25, 242);
+            this.FExAmo.Name = "FExAmo";
+            this.FExAmo.Size = new System.Drawing.Size(199, 33);
+            this.FExAmo.TabIndex = 37;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(20, 212);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(82, 23);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Amount";
+            // 
+            // FExPorp
+            // 
+            this.FExPorp.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.FExPorp.FormattingEnabled = true;
+            this.FExPorp.Items.AddRange(new object[] {
+            "Mantenance",
+            "Food",
+            "Salary",
+            "Tax",
+            "Other"});
+            this.FExPorp.Location = new System.Drawing.Point(24, 161);
+            this.FExPorp.Name = "FExPorp";
+            this.FExPorp.Size = new System.Drawing.Size(200, 32);
+            this.FExPorp.TabIndex = 35;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.Location = new System.Drawing.Point(20, 130);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(83, 23);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Purpose";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.Location = new System.Drawing.Point(15, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(159, 28);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Expenditures";
+            // 
             // FExDate
             // 
             this.FExDate.CustomFormat = "yyyy-MM-dd";
@@ -436,94 +532,6 @@ namespace Cow_Farm_System
             this.label4.TabIndex = 31;
             this.label4.Text = "Date";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(15, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 28);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Expenditures";
-            // 
-            // FExPorp
-            // 
-            this.FExPorp.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.FExPorp.FormattingEnabled = true;
-            this.FExPorp.Location = new System.Drawing.Point(24, 161);
-            this.FExPorp.Name = "FExPorp";
-            this.FExPorp.Size = new System.Drawing.Size(200, 32);
-            this.FExPorp.TabIndex = 35;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(20, 130);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 23);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Purpose";
-            // 
-            // FExAmo
-            // 
-            this.FExAmo.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.FExAmo.Location = new System.Drawing.Point(25, 242);
-            this.FExAmo.Name = "FExAmo";
-            this.FExAmo.Size = new System.Drawing.Size(199, 33);
-            this.FExAmo.TabIndex = 37;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(20, 212);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 23);
-            this.label7.TabIndex = 36;
-            this.label7.Text = "Amount";
-            // 
-            // ExSave
-            // 
-            this.ExSave.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ExSave.FlatAppearance.BorderSize = 0;
-            this.ExSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExSave.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.ExSave.ForeColor = System.Drawing.Color.White;
-            this.ExSave.Location = new System.Drawing.Point(42, 292);
-            this.ExSave.Name = "ExSave";
-            this.ExSave.Size = new System.Drawing.Size(139, 44);
-            this.ExSave.TabIndex = 35;
-            this.ExSave.Text = "Save";
-            this.ExSave.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(523, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(168, 25);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Expenditure List";
-            // 
-            // FExList
-            // 
-            this.FExList.AllowUserToAddRows = false;
-            this.FExList.AllowUserToDeleteRows = false;
-            this.FExList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.FExList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.FExList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FExList.Location = new System.Drawing.Point(271, 52);
-            this.FExList.Name = "FExList";
-            this.FExList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.FExList.Size = new System.Drawing.Size(634, 273);
-            this.FExList.TabIndex = 39;
-            // 
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -543,6 +551,28 @@ namespace Cow_Farm_System
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(923, 345);
             this.panel11.TabIndex = 35;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(281, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(53, 23);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "Filter";
+            // 
+            // FInFilter
+            // 
+            this.FInFilter.CustomFormat = "yyyy-MM-dd";
+            this.FInFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.FInFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FInFilter.Location = new System.Drawing.Point(340, 13);
+            this.FInFilter.Name = "FInFilter";
+            this.FInFilter.Size = new System.Drawing.Size(200, 33);
+            this.FInFilter.TabIndex = 40;
+            this.FInFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             // 
             // FInList
             // 
@@ -654,27 +684,16 @@ namespace Cow_Farm_System
             this.label13.TabIndex = 31;
             this.label13.Text = "Income Date";
             // 
-            // FInFilter
+            // EmpTemp
             // 
-            this.FInFilter.CustomFormat = "yyyy-MM-dd";
-            this.FInFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.FInFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FInFilter.Location = new System.Drawing.Point(340, 13);
-            this.FInFilter.Name = "FInFilter";
-            this.FInFilter.Size = new System.Drawing.Size(200, 33);
-            this.FInFilter.TabIndex = 40;
-            this.FInFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(281, 18);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 23);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "Filter";
+            this.EmpTemp.AutoSize = true;
+            this.EmpTemp.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpTemp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EmpTemp.Location = new System.Drawing.Point(1211, 40);
+            this.EmpTemp.Name = "EmpTemp";
+            this.EmpTemp.Size = new System.Drawing.Size(21, 23);
+            this.EmpTemp.TabIndex = 36;
+            this.EmpTemp.Text = "1";
             // 
             // Finance
             // 
@@ -682,6 +701,7 @@ namespace Cow_Farm_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.EmpTemp);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label3);
@@ -781,5 +801,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DateTimePicker FInFilter;
+        private System.Windows.Forms.Label EmpTemp;
     }
 }
