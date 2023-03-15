@@ -19,7 +19,7 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             showExp();
-            showIco();
+            showInc();
         }
 
         private void showExp()
@@ -28,7 +28,7 @@ namespace Cow_Farm_System
             FExList.DataSource = Con.GetData(Query);
         }
 
-        private void showIco()
+        private void showInc()
         {
             String Query = "Select * from IncomeTbl";
             FInList.DataSource = Con.GetData(Query);
@@ -138,7 +138,21 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Missing Information");
             }
-            
+            else
+            {
+                try
+                {
+                    String Query = "insert into IncomeTbl values('" + FInDate.Value.Date.ToShortDateString() + "','" + FInType.SelectedItem.ToString() + "','" + Convert.ToInt32(FInAmo.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    Con.SetData(Query);
+                    showInc();
+                    ClearInc();
+                    MessageBox.Show("Income Added!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }
