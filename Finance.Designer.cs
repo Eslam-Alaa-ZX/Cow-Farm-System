@@ -579,11 +579,12 @@ namespace Cow_Farm_System
             // 
             this.FInList.AllowUserToAddRows = false;
             this.FInList.AllowUserToDeleteRows = false;
-            this.FInList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.FInList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.FInList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.FInList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FInList.Location = new System.Drawing.Point(271, 52);
             this.FInList.Name = "FInList";
+            this.FInList.ReadOnly = true;
             this.FInList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.FInList.Size = new System.Drawing.Size(634, 273);
             this.FInList.TabIndex = 39;
