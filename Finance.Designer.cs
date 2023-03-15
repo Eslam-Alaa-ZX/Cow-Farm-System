@@ -84,6 +84,7 @@ namespace Cow_Farm_System
             this.EmpTemp = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.FExFilter = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -105,6 +106,7 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.FExList)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -402,6 +404,7 @@ namespace Cow_Farm_System
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.pictureBox9);
             this.panel10.Controls.Add(this.label15);
             this.panel10.Controls.Add(this.FExFilter);
             this.panel10.Controls.Add(this.FExList);
@@ -438,11 +441,12 @@ namespace Cow_Farm_System
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(546, 18);
+            this.label8.Location = new System.Drawing.Point(431, 17);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(168, 25);
             this.label8.TabIndex = 38;
             this.label8.Text = "Expenditure List";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // ExSave
             // 
@@ -562,7 +566,7 @@ namespace Cow_Farm_System
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(281, 18);
+            this.label14.Location = new System.Drawing.Point(611, 16);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 23);
             this.label14.TabIndex = 41;
@@ -573,7 +577,7 @@ namespace Cow_Farm_System
             this.FInFilter.CustomFormat = "yyyy-MM-dd";
             this.FInFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.FInFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FInFilter.Location = new System.Drawing.Point(340, 13);
+            this.FInFilter.Location = new System.Drawing.Point(670, 11);
             this.FInFilter.Name = "FInFilter";
             this.FInFilter.Size = new System.Drawing.Size(200, 33);
             this.FInFilter.TabIndex = 40;
@@ -599,11 +603,12 @@ namespace Cow_Farm_System
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(557, 18);
+            this.label9.Location = new System.Drawing.Point(431, 15);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(125, 25);
             this.label9.TabIndex = 38;
             this.label9.Text = "Income List";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // InSave
             // 
@@ -713,7 +718,7 @@ namespace Cow_Farm_System
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(276, 19);
+            this.label15.Location = new System.Drawing.Point(611, 18);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 23);
             this.label15.TabIndex = 43;
@@ -724,12 +729,22 @@ namespace Cow_Farm_System
             this.FExFilter.CustomFormat = "yyyy-MM-dd";
             this.FExFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.FExFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FExFilter.Location = new System.Drawing.Point(335, 14);
+            this.FExFilter.Location = new System.Drawing.Point(670, 13);
             this.FExFilter.Name = "FExFilter";
             this.FExFilter.Size = new System.Drawing.Size(200, 33);
             this.FExFilter.TabIndex = 42;
             this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
             this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(877, 13);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 44;
+            this.pictureBox9.TabStop = false;
             // 
             // Finance
             // 
@@ -779,6 +794,7 @@ namespace Cow_Farm_System
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FInList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -840,5 +856,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label EmpTemp;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker FExFilter;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

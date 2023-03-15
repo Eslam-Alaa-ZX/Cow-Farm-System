@@ -176,5 +176,15 @@ namespace Cow_Farm_System
         {
             Filterincome();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
