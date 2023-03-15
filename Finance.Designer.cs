@@ -641,6 +641,11 @@ namespace Cow_Farm_System
             // 
             this.FInType.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.FInType.FormattingEnabled = true;
+            this.FInType.Items.AddRange(new object[] {
+            "Sales",
+            "Training",
+            "Services",
+            "Other"});
             this.FInType.Location = new System.Drawing.Point(24, 161);
             this.FInType.Name = "FInType";
             this.FInType.Size = new System.Drawing.Size(200, 32);
