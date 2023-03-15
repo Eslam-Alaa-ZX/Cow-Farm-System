@@ -191,5 +191,10 @@ namespace Cow_Farm_System
         {
             showExp();
         }
+
+        private void IncRef_Click(object sender, EventArgs e)
+        {
+            showInc();
+        }
     }
 }
