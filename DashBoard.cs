@@ -46,7 +46,8 @@ namespace Cow_Farm_System
             String Query2 = "Select sum(TotalMilk) from MilkTbl";
             LMilk.Text = Con.GetData(Query2).Rows[0][0].ToString()+" Litters";
 
-            
+            String Query3 = "Select count(*) from EmpTbl";
+            LEmp.Text = Con.GetData(Query3).Rows[0][0].ToString();
         }
 
         private void label18_Click(object sender, EventArgs e)
