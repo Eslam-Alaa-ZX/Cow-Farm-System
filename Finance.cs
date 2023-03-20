@@ -20,6 +20,14 @@ namespace Cow_Farm_System
             Con = new Functions();
             showExp();
             showInc();
+            getEmpId();
+        }
+
+        private void getEmpId()
+        {
+            string Query = "Select EmpId from EmpTbl";
+            EID.ValueMember = "EmpId";
+            EID.DataSource = Con.GetData(Query);
         }
 
         private void showExp()
@@ -119,7 +127,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "insert into ExpenditureTbl values('" + FExDate.Value.Date.ToShortDateString() + "','" + FExPorp.SelectedItem.ToString() + "','" + Convert.ToInt32(FExAmo.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    String Query = "insert into ExpenditureTbl values('" + FExDate.Value.Date.ToShortDateString() + "','" + FExPorp.SelectedItem.ToString() + "','" + Convert.ToInt32(FExAmo.Text) + "'," + EID.SelectedValue + ")";
                     Con.SetData(Query);
                     showExp();
                     ClearExp();
@@ -142,7 +150,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "insert into IncomeTbl values('" + FInDate.Value.Date.ToShortDateString() + "','" + FInType.SelectedItem.ToString() + "','" + Convert.ToInt32(FInAmo.Text) + "','" + Convert.ToInt32(EmpTemp.Text) + "')";
+                    String Query = "insert into IncomeTbl values('" + FInDate.Value.Date.ToShortDateString() + "','" + FInType.SelectedItem.ToString() + "','" + Convert.ToInt32(FInAmo.Text) + "'," + EID.SelectedValue + ")";
                     Con.SetData(Query);
                     showInc();
                     ClearInc();
