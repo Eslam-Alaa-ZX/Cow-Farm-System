@@ -39,17 +39,31 @@ namespace Cow_Farm_System
             {
                 if(Role.SelectedItem.ToString() == "Admin")
                 {
-                    Employees page = new Employees();
-                    page.Show();
-                    this.Hide();
+                    if (UserName.Text == "Admin" && Password.Text == "Admin")
+                    {
+                        Employees page = new Employees();
+                        page.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong Admin name or Password");
+                    }
                 }
-                else
+                else if(Role.SelectedItem.ToString() == "Employee")
                 {
-                    MessageBox.Show("Wrong Admin name or Password");
-                }
-                if(Role.SelectedItem.ToString() == "Employee")
-                {
-
+                    string Query = "Select count(*) from EmpTbl where EmpName='"+UserName.Text+"' and EmpPass='"+Password.Text+"'";
+                    if (Con.GetData(Query).Rows[0][0].ToString() == "1")
+                    {
+                        Cows page = new Cows();
+                        page.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong UserName or Password");
+                    }
+                    
                 }
             }
         }
