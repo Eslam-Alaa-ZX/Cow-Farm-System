@@ -43,6 +43,9 @@ namespace Cow_Farm_System
             String Query = "Select count(*) from CowTbl";
             LCow.Text = Con.GetData(Query).Rows[0][0].ToString();
 
+            String Query2 = "Select sum(TotalMilk) from MilkTbl";
+            LMilk.Text = Con.GetData(Query2).Rows[0][0].ToString()+" Litters";
+
             
         }
 
