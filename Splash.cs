@@ -37,5 +37,10 @@ namespace Cow_Farm_System
                 page.Show();
             }
         }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
