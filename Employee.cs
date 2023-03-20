@@ -51,7 +51,7 @@ namespace Cow_Farm_System
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" /*|| EPass.Text == ""*/)
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -59,7 +59,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "insert into EmpTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedItem.ToString() + "','" + EPhon.Text + "', '" + EAdd.Text + "')";
+                    String Query = "insert into EmpTbl values('" + EName.Text + "','" + EDate.Value.Date.ToShortDateString() + "','" + EGen.SelectedItem.ToString() + "','" + EPhon.Text + "', '" + EAdd.Text + "','"+ EPass.Text + "')";
                     Con.SetData(Query);
                     showEmployees();
                     Clear();
@@ -81,7 +81,7 @@ namespace Cow_Farm_System
             EGen.SelectedItem = EList.SelectedRows[0].Cells[3].Value.ToString();
             EPhon.Text = EList.SelectedRows[0].Cells[4].Value.ToString();
             EAdd.Text = EList.SelectedRows[0].Cells[5].Value.ToString();
-            //EPass.Text = EList.SelectedRows[0].Cells[6].Value.ToString();
+            EPass.Text = EList.SelectedRows[0].Cells[6].Value.ToString();
             if (EName.Text == "")
             {
                 key = 0;
@@ -99,7 +99,7 @@ namespace Cow_Farm_System
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" /*|| EPass.Text == ""*/)
+            if (EName.Text == "" || EGen.SelectedIndex == -1 || EPhon.Text == "" || EAdd.Text == "" || EPass.Text == "")
             {
                 MessageBox.Show("Missing Information");
             }
@@ -107,7 +107,7 @@ namespace Cow_Farm_System
             {
                 try
                 {
-                    String Query = "update EmpTbl set EmpName='" + EName.Text + "',EmpDob= '" + EDate.Value.Date.ToShortDateString() + "',Gender='" + EGen.SelectedItem.ToString() + "',Phone='" + EPhon.Text + "',Address='" + EAdd.Text + "' where EmpId=" + key + " ";
+                    String Query = "update EmpTbl set EmpName='" + EName.Text + "',EmpDob= '" + EDate.Value.Date.ToShortDateString() + "',Gender='" + EGen.SelectedItem.ToString() + "',Phone='" + EPhon.Text + "',Address='" + EAdd.Text + "',EmpPass='" + EPass.Text + "' where EmpId=" + key + " ";
                     Con.SetData(Query);
                     showEmployees();
                     Clear();
