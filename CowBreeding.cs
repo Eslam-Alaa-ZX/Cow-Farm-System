@@ -218,5 +218,12 @@ namespace Cow_Farm_System
                 key = Convert.ToInt32(BList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Login page = new Login();
+            page.Show();
+            this.Hide();
+        }
     }
 }

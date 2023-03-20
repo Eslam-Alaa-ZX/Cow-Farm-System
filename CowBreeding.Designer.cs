@@ -81,6 +81,7 @@ namespace Cow_Farm_System
             this.BCowID = new System.Windows.Forms.ComboBox();
             this.BRemark = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -99,11 +100,13 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel9);
@@ -669,6 +672,17 @@ namespace Cow_Farm_System
             this.label4.TabIndex = 34;
             this.label4.Text = "Remarks";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(61, 698);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(99, 87);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 16;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
             // CowBreeding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -733,6 +747,7 @@ namespace Cow_Farm_System
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -791,5 +806,6 @@ namespace Cow_Farm_System
         private System.Windows.Forms.ComboBox BCowID;
         private System.Windows.Forms.TextBox BRemark;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
