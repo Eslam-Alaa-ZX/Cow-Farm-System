@@ -58,6 +58,9 @@ namespace Cow_Farm_System
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.ExRef = new System.Windows.Forms.PictureBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.FExFilter = new System.Windows.Forms.DateTimePicker();
             this.FExList = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.ExSave = new System.Windows.Forms.Button();
@@ -69,6 +72,7 @@ namespace Cow_Farm_System
             this.FExDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.IncRef = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.FInFilter = new System.Windows.Forms.DateTimePicker();
             this.FInList = new System.Windows.Forms.DataGridView();
@@ -81,11 +85,8 @@ namespace Cow_Farm_System
             this.label12 = new System.Windows.Forms.Label();
             this.FInDate = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
-            this.EmpTemp = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.FExFilter = new System.Windows.Forms.DateTimePicker();
-            this.ExRef = new System.Windows.Forms.PictureBox();
-            this.IncRef = new System.Windows.Forms.PictureBox();
+            this.EID = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -104,11 +105,11 @@ namespace Cow_Farm_System
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FExList)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FInList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncRef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FInList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -424,6 +425,40 @@ namespace Cow_Farm_System
             this.panel10.Size = new System.Drawing.Size(923, 345);
             this.panel10.TabIndex = 34;
             // 
+            // ExRef
+            // 
+            this.ExRef.Image = ((System.Drawing.Image)(resources.GetObject("ExRef.Image")));
+            this.ExRef.Location = new System.Drawing.Point(872, 13);
+            this.ExRef.Name = "ExRef";
+            this.ExRef.Size = new System.Drawing.Size(41, 33);
+            this.ExRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExRef.TabIndex = 44;
+            this.ExRef.TabStop = false;
+            this.ExRef.Click += new System.EventHandler(this.ExRef_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label15.Location = new System.Drawing.Point(611, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 23);
+            this.label15.TabIndex = 43;
+            this.label15.Text = "Filter";
+            // 
+            // FExFilter
+            // 
+            this.FExFilter.CustomFormat = "yyyy-MM-dd";
+            this.FExFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.FExFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.FExFilter.Location = new System.Drawing.Point(670, 13);
+            this.FExFilter.Name = "FExFilter";
+            this.FExFilter.Size = new System.Drawing.Size(200, 33);
+            this.FExFilter.TabIndex = 42;
+            this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
+            this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
+            // 
             // FExList
             // 
             this.FExList.AllowUserToAddRows = false;
@@ -563,6 +598,17 @@ namespace Cow_Farm_System
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(923, 345);
             this.panel11.TabIndex = 35;
+            // 
+            // IncRef
+            // 
+            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
+            this.IncRef.Location = new System.Drawing.Point(871, 11);
+            this.IncRef.Name = "IncRef";
+            this.IncRef.Size = new System.Drawing.Size(41, 33);
+            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IncRef.TabIndex = 45;
+            this.IncRef.TabStop = false;
+            this.IncRef.Click += new System.EventHandler(this.IncRef_Click);
             // 
             // label14
             // 
@@ -705,61 +751,25 @@ namespace Cow_Farm_System
             this.label13.TabIndex = 31;
             this.label13.Text = "Income Date";
             // 
-            // EmpTemp
+            // EID
             // 
-            this.EmpTemp.AutoSize = true;
-            this.EmpTemp.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpTemp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.EmpTemp.Location = new System.Drawing.Point(1211, 40);
-            this.EmpTemp.Name = "EmpTemp";
-            this.EmpTemp.Size = new System.Drawing.Size(21, 23);
-            this.EmpTemp.TabIndex = 36;
-            this.EmpTemp.Text = "1";
+            this.EID.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.EID.FormattingEnabled = true;
+            this.EID.Location = new System.Drawing.Point(1039, 42);
+            this.EID.Name = "EID";
+            this.EID.Size = new System.Drawing.Size(196, 32);
+            this.EID.TabIndex = 37;
             // 
-            // label15
+            // label16
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(611, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 23);
-            this.label15.TabIndex = 43;
-            this.label15.Text = "Filter";
-            // 
-            // FExFilter
-            // 
-            this.FExFilter.CustomFormat = "yyyy-MM-dd";
-            this.FExFilter.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.FExFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FExFilter.Location = new System.Drawing.Point(670, 13);
-            this.FExFilter.Name = "FExFilter";
-            this.FExFilter.Size = new System.Drawing.Size(200, 33);
-            this.FExFilter.TabIndex = 42;
-            this.FExFilter.Value = new System.DateTime(2023, 2, 26, 0, 0, 0, 0);
-            this.FExFilter.ValueChanged += new System.EventHandler(this.FExFilter_ValueChanged);
-            // 
-            // ExRef
-            // 
-            this.ExRef.Image = ((System.Drawing.Image)(resources.GetObject("ExRef.Image")));
-            this.ExRef.Location = new System.Drawing.Point(872, 13);
-            this.ExRef.Name = "ExRef";
-            this.ExRef.Size = new System.Drawing.Size(41, 33);
-            this.ExRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ExRef.TabIndex = 44;
-            this.ExRef.TabStop = false;
-            this.ExRef.Click += new System.EventHandler(this.ExRef_Click);
-            // 
-            // IncRef
-            // 
-            this.IncRef.Image = ((System.Drawing.Image)(resources.GetObject("IncRef.Image")));
-            this.IncRef.Location = new System.Drawing.Point(871, 11);
-            this.IncRef.Name = "IncRef";
-            this.IncRef.Size = new System.Drawing.Size(41, 33);
-            this.IncRef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.IncRef.TabIndex = 45;
-            this.IncRef.TabStop = false;
-            this.IncRef.Click += new System.EventHandler(this.IncRef_Click);
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Location = new System.Drawing.Point(910, 47);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(126, 23);
+            this.label16.TabIndex = 36;
+            this.label16.Text = "Employee ID";
             // 
             // Finance
             // 
@@ -767,7 +777,8 @@ namespace Cow_Farm_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
-            this.Controls.Add(this.EmpTemp);
+            this.Controls.Add(this.EID);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label3);
@@ -805,12 +816,12 @@ namespace Cow_Farm_System
             this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FExList)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.FInList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExRef)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IncRef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FInList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -869,10 +880,11 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DateTimePicker FInFilter;
-        private System.Windows.Forms.Label EmpTemp;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker FExFilter;
         private System.Windows.Forms.PictureBox ExRef;
         private System.Windows.Forms.PictureBox IncRef;
+        private System.Windows.Forms.ComboBox EID;
+        private System.Windows.Forms.Label label16;
     }
 }
