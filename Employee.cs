@@ -143,5 +143,12 @@ namespace Cow_Farm_System
                 }
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Login page = new Login();
+            page.Show();
+            this.Hide();
+        }
     }
 }
