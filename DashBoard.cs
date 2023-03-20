@@ -56,7 +56,8 @@ namespace Cow_Farm_System
             String Query = "Select Max(IncAmount) from IncomeTbl";
             SMax.Text = "$ " + Con.GetData(Query).Rows[0][0].ToString();
 
-            
+            String Query2 = "Select Max(ExpAmount) from ExpenditureTbl";
+            ExpMax.Text = "$ " + Con.GetData(Query2).Rows[0][0].ToString();
         }
 
         private void label18_Click(object sender, EventArgs e)
