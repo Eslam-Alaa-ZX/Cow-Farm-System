@@ -26,7 +26,16 @@ namespace Cow_Farm_System
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            startP += 1;
+            ProgBar.Value = startP;
+            if(ProgBar.Value == 100)
+            {
+                ProgBar.Value = 0;
+                timer1.Stop();
+                Login page = new Login();
+                this.Hide();
+                page.Show();
+            }
         }
     }
 }
