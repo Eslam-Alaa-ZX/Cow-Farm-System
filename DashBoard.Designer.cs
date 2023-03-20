@@ -83,6 +83,10 @@ namespace Cow_Farm_System
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -109,6 +113,7 @@ namespace Cow_Farm_System
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -697,12 +702,58 @@ namespace Cow_Farm_System
             this.label22.TabIndex = 9;
             this.label22.Text = "Date";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(44, 7);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(240, 28);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Highest Expenditure";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(31, 73);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(22, 24);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "$";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(77, 125);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(61, 24);
+            this.label20.TabIndex = 11;
+            this.label20.Text = "Date";
+            // 
+            // panel19
+            // 
+            this.panel19.BackColor = System.Drawing.Color.Crimson;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel19.Controls.Add(this.label20);
+            this.panel19.Controls.Add(this.label23);
+            this.panel19.Controls.Add(this.label21);
+            this.panel19.Location = new System.Drawing.Point(848, 529);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(322, 172);
+            this.panel19.TabIndex = 9;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel10);
@@ -757,6 +808,8 @@ namespace Cow_Farm_System
             this.panel17.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -817,5 +870,9 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel19;
     }
 }
