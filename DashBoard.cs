@@ -70,5 +70,10 @@ namespace Cow_Farm_System
             page.Show();
             this.Hide();
         }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
