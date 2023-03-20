@@ -70,13 +70,13 @@ namespace Cow_Farm_System
             this.FBal = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LEmp = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.LMilk = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.LCow = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -549,23 +549,23 @@ namespace Cow_Farm_System
             // 
             this.panel15.BackColor = System.Drawing.Color.Crimson;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.label11);
+            this.panel15.Controls.Add(this.LEmp);
             this.panel15.Controls.Add(this.label12);
             this.panel15.Location = new System.Drawing.Point(137, 170);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(166, 102);
             this.panel15.TabIndex = 7;
             // 
-            // label11
+            // LEmp
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(40, 61);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(91, 24);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Income";
+            this.LEmp.AutoSize = true;
+            this.LEmp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LEmp.ForeColor = System.Drawing.Color.White;
+            this.LEmp.Location = new System.Drawing.Point(40, 61);
+            this.LEmp.Name = "LEmp";
+            this.LEmp.Size = new System.Drawing.Size(24, 24);
+            this.LEmp.TabIndex = 8;
+            this.LEmp.Text = "e";
             // 
             // label12
             // 
@@ -582,7 +582,7 @@ namespace Cow_Farm_System
             // 
             this.panel16.BackColor = System.Drawing.Color.SteelBlue;
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.label13);
+            this.panel16.Controls.Add(this.LMilk);
             this.panel16.Controls.Add(this.label14);
             this.panel16.ForeColor = System.Drawing.Color.Black;
             this.panel16.Location = new System.Drawing.Point(264, 62);
@@ -590,16 +590,16 @@ namespace Cow_Farm_System
             this.panel16.Size = new System.Drawing.Size(168, 102);
             this.panel16.TabIndex = 7;
             // 
-            // label13
+            // LMilk
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(36, 58);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 24);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Income";
+            this.LMilk.AutoSize = true;
+            this.LMilk.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LMilk.ForeColor = System.Drawing.Color.White;
+            this.LMilk.Location = new System.Drawing.Point(36, 58);
+            this.LMilk.Name = "LMilk";
+            this.LMilk.Size = new System.Drawing.Size(31, 24);
+            this.LMilk.TabIndex = 8;
+            this.LMilk.Text = "m";
             // 
             // label14
             // 
@@ -616,23 +616,23 @@ namespace Cow_Farm_System
             // 
             this.panel17.BackColor = System.Drawing.Color.DarkOrange;
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.label15);
+            this.panel17.Controls.Add(this.LCow);
             this.panel17.Controls.Add(this.label16);
             this.panel17.Location = new System.Drawing.Point(24, 62);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(166, 102);
             this.panel17.TabIndex = 6;
             // 
-            // label15
+            // LCow
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(32, 58);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 24);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Income";
+            this.LCow.AutoSize = true;
+            this.LCow.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LCow.ForeColor = System.Drawing.Color.White;
+            this.LCow.Location = new System.Drawing.Point(32, 58);
+            this.LCow.Name = "LCow";
+            this.LCow.Size = new System.Drawing.Size(24, 24);
+            this.LCow.TabIndex = 7;
+            this.LCow.Text = "c";
             // 
             // label16
             // 
@@ -858,13 +858,13 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LEmp;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label LMilk;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label LCow;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel18;

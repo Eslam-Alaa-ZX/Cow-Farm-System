@@ -19,6 +19,7 @@ namespace Cow_Farm_System
             InitializeComponent();
             Con = new Functions();
             FinanceCalc();
+            LogistecCalc();
         }
 
         private void FinanceCalc()
@@ -35,6 +36,14 @@ namespace Cow_Farm_System
 
             bal = inc - exp;
             FBal.Text = "$ " + bal;
+        }
+
+        private void LogistecCalc()
+        {
+            String Query = "Select count(*) from CowTbl";
+            LCow.Text = Con.GetData(Query).Rows[0][0].ToString();
+
+            
         }
 
         private void label18_Click(object sender, EventArgs e)
