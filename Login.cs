@@ -29,6 +29,10 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Select a Role");
             }
+            else if (UserName.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Enter username and password");
+            }
             
         }
     }
