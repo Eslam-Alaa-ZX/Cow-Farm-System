@@ -22,5 +22,14 @@ namespace Cow_Farm_System
             UserName.Text = "";
             Password.Text = "";
         }
+
+        private void LogBtn_Click(object sender, EventArgs e)
+        {
+            if (Role.SelectedIndex == -1)
+            {
+                MessageBox.Show("Select a Role");
+            }
+            
+        }
     }
 }

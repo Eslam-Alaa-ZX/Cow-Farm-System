@@ -165,6 +165,7 @@ namespace Cow_Farm_System
             this.LogBtn.TabIndex = 7;
             this.LogBtn.Text = "Login";
             this.LogBtn.UseVisualStyleBackColor = false;
+            this.LogBtn.Click += new System.EventHandler(this.LogBtn_Click);
             // 
             // Reset
             // 
