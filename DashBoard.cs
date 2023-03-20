@@ -23,11 +23,18 @@ namespace Cow_Farm_System
 
         private void FinanceCalc()
         {
+            int inc, exp;
+            double bal;
             String Query = "Select sum(IncAmount) from IncomeTbl";
-            FInc.Text = "$ "+Con.GetData(Query).Rows[0][0].ToString();
+            inc = Convert.ToInt32(Con.GetData(Query).Rows[0][0]);
+            FInc.Text = "$ "+inc.ToString();
 
             String Query2 = "Select sum(ExpAmount) from ExpenditureTbl";
-            FExp.Text = "$ " + Con.GetData(Query2).Rows[0][0].ToString();
+            exp = Convert.ToInt32(Con.GetData(Query2).Rows[0][0]);
+            FExp.Text = "$ " + exp.ToString();
+
+            bal = inc - exp;
+            FBal.Text = "$ " + bal;
         }
 
         private void label18_Click(object sender, EventArgs e)
