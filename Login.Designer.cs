@@ -31,18 +31,18 @@ namespace Cow_Farm_System
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.UserName = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
+            this.LogBtn = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Label();
+            this.Role = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +58,39 @@ namespace Cow_Farm_System
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(225, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(34, 260);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(144, 24);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Echo Friendly";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(42, 217);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 24);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Professional";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(42, 174);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 24);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "High Quality";
             // 
             // label1
             // 
@@ -102,104 +135,72 @@ namespace Cow_Farm_System
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
-            // textBox1
+            // UserName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(380, 199);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 33);
-            this.textBox1.TabIndex = 5;
+            this.UserName.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.UserName.Location = new System.Drawing.Point(380, 199);
+            this.UserName.Name = "UserName";
+            this.UserName.Size = new System.Drawing.Size(187, 33);
+            this.UserName.TabIndex = 5;
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.textBox2.Location = new System.Drawing.Point(380, 265);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 33);
-            this.textBox2.TabIndex = 6;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.Password.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.Password.Location = new System.Drawing.Point(380, 265);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(187, 33);
+            this.Password.TabIndex = 6;
+            this.Password.UseSystemPasswordChar = true;
             // 
-            // button1
+            // LogBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(353, 341);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 44);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LogBtn.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.LogBtn.FlatAppearance.BorderSize = 0;
+            this.LogBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LogBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.LogBtn.ForeColor = System.Drawing.Color.White;
+            this.LogBtn.Location = new System.Drawing.Point(353, 341);
+            this.LogBtn.Name = "LogBtn";
+            this.LogBtn.Size = new System.Drawing.Size(139, 44);
+            this.LogBtn.TabIndex = 7;
+            this.LogBtn.Text = "Login";
+            this.LogBtn.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // Reset
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(389, 400);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 24);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Reset";
+            this.Reset.AutoSize = true;
+            this.Reset.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reset.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Reset.Location = new System.Drawing.Point(389, 400);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(66, 24);
+            this.Reset.TabIndex = 8;
+            this.Reset.Text = "Reset";
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
-            // comboBox1
+            // Role
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Role.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.Role.FormattingEnabled = true;
+            this.Role.Items.AddRange(new object[] {
             "Admin",
             "Employee"});
-            this.comboBox1.Location = new System.Drawing.Point(320, 139);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 32);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "Select Role";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(42, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "High Quality";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(42, 217);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 24);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Professional";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(34, 260);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 24);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Echo Friendly";
+            this.Role.Location = new System.Drawing.Point(320, 139);
+            this.Role.Name = "Role";
+            this.Role.Size = new System.Drawing.Size(196, 32);
+            this.Role.TabIndex = 9;
+            this.Role.Text = "Select Role";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 450);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Role);
+            this.Controls.Add(this.Reset);
+            this.Controls.Add(this.LogBtn);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.UserName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -227,10 +228,10 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox UserName;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.Button LogBtn;
+        private System.Windows.Forms.Label Reset;
+        private System.Windows.Forms.ComboBox Role;
     }
 }

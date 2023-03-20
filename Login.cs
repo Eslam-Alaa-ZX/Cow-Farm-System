@@ -16,5 +16,11 @@ namespace Cow_Farm_System
         {
             InitializeComponent();
         }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            UserName.Text = "";
+            Password.Text = "";
+        }
     }
 }
