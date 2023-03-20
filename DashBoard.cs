@@ -17,6 +17,12 @@ namespace Cow_Farm_System
             InitializeComponent();
         }
 
+        private void FinanceCalc()
+        {
+            String Query = "Select Sum(IncAmount) from IncomeTbl";
+            FInList.DataSource = Con.GetData(Query);
+        }
+
         private void label18_Click(object sender, EventArgs e)
         {
 
@@ -72,6 +78,11 @@ namespace Cow_Farm_System
         }
 
         private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
         {
 
         }

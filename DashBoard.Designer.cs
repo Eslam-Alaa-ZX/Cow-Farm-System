@@ -65,9 +65,9 @@ namespace Cow_Farm_System
             this.label6 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.FInc = new System.Windows.Forms.Label();
+            this.FExp = new System.Windows.Forms.Label();
+            this.FBal = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -435,12 +435,13 @@ namespace Cow_Farm_System
             // 
             this.panel11.BackColor = System.Drawing.Color.DarkOrange;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label8);
+            this.panel11.Controls.Add(this.FInc);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Location = new System.Drawing.Point(24, 62);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(166, 102);
             this.panel11.TabIndex = 6;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.panel11_Paint);
             // 
             // label5
             // 
@@ -457,7 +458,7 @@ namespace Cow_Farm_System
             // 
             this.panel12.BackColor = System.Drawing.Color.SteelBlue;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label9);
+            this.panel12.Controls.Add(this.FExp);
             this.panel12.Controls.Add(this.label6);
             this.panel12.ForeColor = System.Drawing.Color.Black;
             this.panel12.Location = new System.Drawing.Point(264, 62);
@@ -480,7 +481,7 @@ namespace Cow_Farm_System
             // 
             this.panel13.BackColor = System.Drawing.Color.Crimson;
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.label10);
+            this.panel13.Controls.Add(this.FBal);
             this.panel13.Controls.Add(this.label7);
             this.panel13.Location = new System.Drawing.Point(137, 170);
             this.panel13.Name = "panel13";
@@ -498,38 +499,38 @@ namespace Cow_Farm_System
             this.label7.TabIndex = 6;
             this.label7.Text = "Balance";
             // 
-            // label8
+            // FInc
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(32, 58);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 24);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Income";
+            this.FInc.AutoSize = true;
+            this.FInc.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FInc.ForeColor = System.Drawing.Color.White;
+            this.FInc.Location = new System.Drawing.Point(32, 58);
+            this.FInc.Name = "FInc";
+            this.FInc.Size = new System.Drawing.Size(22, 24);
+            this.FInc.TabIndex = 7;
+            this.FInc.Text = "$";
             // 
-            // label9
+            // FExp
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(36, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 24);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Income";
+            this.FExp.AutoSize = true;
+            this.FExp.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FExp.ForeColor = System.Drawing.Color.White;
+            this.FExp.Location = new System.Drawing.Point(36, 58);
+            this.FExp.Name = "FExp";
+            this.FExp.Size = new System.Drawing.Size(22, 24);
+            this.FExp.TabIndex = 8;
+            this.FExp.Text = "$";
             // 
-            // label10
+            // FBal
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(40, 61);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(91, 24);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Income";
+            this.FBal.AutoSize = true;
+            this.FBal.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBal.ForeColor = System.Drawing.Color.White;
+            this.FBal.Location = new System.Drawing.Point(40, 61);
+            this.FBal.Name = "FBal";
+            this.FBal.Size = new System.Drawing.Size(22, 24);
+            this.FBal.TabIndex = 8;
+            this.FBal.Text = "$";
             // 
             // panel14
             // 
@@ -846,13 +847,13 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label FBal;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label FExp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label FInc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel14;
