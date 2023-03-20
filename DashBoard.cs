@@ -12,15 +12,21 @@ namespace Cow_Farm_System
 {
     public partial class DashBoard : Form
     {
+        Functions Con;
+        int key = 0;
         public DashBoard()
         {
             InitializeComponent();
+            Con = new Functions();
+            FinanceCalc();
         }
 
         private void FinanceCalc()
         {
-            String Query = "Select Sum(IncAmount) from IncomeTbl";
-            FInList.DataSource = Con.GetData(Query);
+            String Query = "Select sum(IncAmount) from IncomeTbl";
+            FInc.Text = "$ "+Con.GetData(Query).Rows[0][0].ToString();
+
+            
         }
 
         private void label18_Click(object sender, EventArgs e)
