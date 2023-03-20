@@ -28,6 +28,12 @@ namespace Cow_Farm_System
             CowGV.DataSource = Con.GetData(Query);
         }
 
+        private void SearchCow()
+        {
+            String Query = "Select * from CowTbl where CowName like '%"+CFilter.Text+"%'";
+            CowGV.DataSource = Con.GetData(Query);
+        }
+
         private void label18_Click(object sender, EventArgs e)
         {
 
@@ -201,6 +207,11 @@ namespace Cow_Farm_System
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void CFilter_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

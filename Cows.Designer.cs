@@ -643,6 +643,7 @@ namespace Cow_Farm_System
             this.CFilter.Name = "CFilter";
             this.CFilter.Size = new System.Drawing.Size(187, 33);
             this.CFilter.TabIndex = 30;
+            this.CFilter.TextChanged += new System.EventHandler(this.CFilter_TextChanged);
             // 
             // label4
             // 
