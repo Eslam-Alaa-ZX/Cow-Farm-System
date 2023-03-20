@@ -21,5 +21,12 @@ namespace Cow_Farm_System
         {
 
         }
+
+        int startP = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
