@@ -211,7 +211,7 @@ namespace Cow_Farm_System
 
         private void CFilter_TextChanged(object sender, EventArgs e)
         {
-            
+            SearchCow();
         }
     }
 }
