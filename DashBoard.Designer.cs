@@ -68,6 +68,17 @@ namespace Cow_Farm_System
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -89,6 +100,10 @@ namespace Cow_Farm_System
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -506,12 +521,137 @@ namespace Cow_Farm_System
             this.label10.TabIndex = 8;
             this.label10.Text = "Income";
             // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.White;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.panel15);
+            this.panel14.Controls.Add(this.panel16);
+            this.panel14.Controls.Add(this.panel17);
+            this.panel14.Controls.Add(this.label17);
+            this.panel14.Location = new System.Drawing.Point(777, 127);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(462, 283);
+            this.panel14.TabIndex = 6;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Crimson;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel15.Controls.Add(this.label11);
+            this.panel15.Controls.Add(this.label12);
+            this.panel15.Location = new System.Drawing.Point(137, 170);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(166, 102);
+            this.panel15.TabIndex = 7;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(40, 61);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(91, 24);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Income";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(16, 7);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(139, 28);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Employees";
+            // 
+            // panel16
+            // 
+            this.panel16.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.label13);
+            this.panel16.Controls.Add(this.label14);
+            this.panel16.ForeColor = System.Drawing.Color.Black;
+            this.panel16.Location = new System.Drawing.Point(264, 62);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(168, 102);
+            this.panel16.TabIndex = 7;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(36, 58);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(91, 24);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Income";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(10, 2);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 28);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Milk (Litters)";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.Color.DarkOrange;
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.label15);
+            this.panel17.Controls.Add(this.label16);
+            this.panel17.Location = new System.Drawing.Point(24, 62);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(166, 102);
+            this.panel17.TabIndex = 6;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(32, 58);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(91, 24);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Income";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(40, 7);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 28);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "Cows";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label17.Location = new System.Drawing.Point(176, 12);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(108, 28);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "Logistec";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 788);
+            this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
@@ -554,6 +694,14 @@ namespace Cow_Farm_System
             this.panel12.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -599,5 +747,16 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
