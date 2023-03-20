@@ -33,7 +33,23 @@ namespace Cow_Farm_System
             {
                 MessageBox.Show("Enter username and password");
             }
-            
+            else
+            {
+                if(Role.SelectedItem.ToString() == "Admin")
+                {
+                    Employees page = new Employees();
+                    page.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Admin name or Password");
+                }
+                if(Role.SelectedItem.ToString() == "Employee")
+                {
+
+                }
+            }
         }
     }
 }
