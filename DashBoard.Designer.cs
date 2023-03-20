@@ -80,11 +80,11 @@ namespace Cow_Farm_System
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.SMax = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.ExpMax = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -661,7 +661,7 @@ namespace Cow_Farm_System
             this.panel18.BackColor = System.Drawing.Color.SteelBlue;
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.label22);
-            this.panel18.Controls.Add(this.label18);
+            this.panel18.Controls.Add(this.SMax);
             this.panel18.Controls.Add(this.label19);
             this.panel18.ForeColor = System.Drawing.Color.Black;
             this.panel18.Location = new System.Drawing.Point(304, 529);
@@ -669,16 +669,16 @@ namespace Cow_Farm_System
             this.panel18.Size = new System.Drawing.Size(331, 172);
             this.panel18.TabIndex = 8;
             // 
-            // label18
+            // SMax
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(37, 73);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(22, 24);
-            this.label18.TabIndex = 8;
-            this.label18.Text = "$";
+            this.SMax.AutoSize = true;
+            this.SMax.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SMax.ForeColor = System.Drawing.Color.White;
+            this.SMax.Location = new System.Drawing.Point(37, 73);
+            this.SMax.Name = "SMax";
+            this.SMax.Size = new System.Drawing.Size(22, 24);
+            this.SMax.TabIndex = 8;
+            this.SMax.Text = "$";
             // 
             // label19
             // 
@@ -714,16 +714,16 @@ namespace Cow_Farm_System
             this.label21.TabIndex = 6;
             this.label21.Text = "Highest Expenditure";
             // 
-            // label23
+            // ExpMax
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(31, 73);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(22, 24);
-            this.label23.TabIndex = 10;
-            this.label23.Text = "$";
+            this.ExpMax.AutoSize = true;
+            this.ExpMax.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExpMax.ForeColor = System.Drawing.Color.White;
+            this.ExpMax.Location = new System.Drawing.Point(31, 73);
+            this.ExpMax.Name = "ExpMax";
+            this.ExpMax.Size = new System.Drawing.Size(22, 24);
+            this.ExpMax.TabIndex = 10;
+            this.ExpMax.Text = "$";
             // 
             // label20
             // 
@@ -741,7 +741,7 @@ namespace Cow_Farm_System
             this.panel19.BackColor = System.Drawing.Color.Crimson;
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.label20);
-            this.panel19.Controls.Add(this.label23);
+            this.panel19.Controls.Add(this.ExpMax);
             this.panel19.Controls.Add(this.label21);
             this.panel19.Location = new System.Drawing.Point(848, 529);
             this.panel19.Name = "panel19";
@@ -868,11 +868,11 @@ namespace Cow_Farm_System
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label SMax;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label ExpMax;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel19;
     }

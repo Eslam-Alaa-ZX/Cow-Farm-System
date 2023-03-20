@@ -20,6 +20,7 @@ namespace Cow_Farm_System
             Con = new Functions();
             FinanceCalc();
             LogistecCalc();
+            getMax();
         }
 
         private void FinanceCalc()
@@ -48,6 +49,14 @@ namespace Cow_Farm_System
 
             String Query3 = "Select count(*) from EmpTbl";
             LEmp.Text = Con.GetData(Query3).Rows[0][0].ToString();
+        }
+
+        private void getMax()
+        {
+            String Query = "Select Max(IncAmount) from IncomeTbl";
+            SMax.Text = "$ " + Con.GetData(Query).Rows[0][0].ToString();
+
+            
         }
 
         private void label18_Click(object sender, EventArgs e)
