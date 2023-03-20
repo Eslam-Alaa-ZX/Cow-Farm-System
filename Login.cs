@@ -12,9 +12,11 @@ namespace Cow_Farm_System
 {
     public partial class Login : Form
     {
+        Functions Con;
         public Login()
         {
             InitializeComponent();
+            Con = new Functions();
         }
 
         private void Reset_Click(object sender, EventArgs e)
